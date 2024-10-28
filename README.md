@@ -71,7 +71,7 @@ Pipeline Architecture
 
 ### Module 1
 - [Step 1](./module_1_prerequisites)
-- [Step 2](./Module1/Step2/README.md)
+- [Step 2](./module_1_prerequisites/1-azure-account.md)
 - [Step 3](./Module1/Step3/README.md)
 
 
