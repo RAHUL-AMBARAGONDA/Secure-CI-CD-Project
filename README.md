@@ -70,7 +70,7 @@ Pipeline Architecture
 ## Modules
 
 ### Module 1
-- [Step 1](./https://github.com/RAHUL-AMBARAGONDA/Ulitimate-DevSecOps-Project/tree/main/module_1_prerequisites.md)
+- [Step 1](./module_1_prerequisites)
 - [Step 2](./Module1/Step2/README.md)
 - [Step 3](./Module1/Step3/README.md)
 
