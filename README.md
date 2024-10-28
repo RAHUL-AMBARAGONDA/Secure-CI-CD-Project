@@ -52,7 +52,7 @@ To get started with this project, ensure that the following prerequisites are me
 Azure Kubernetes Service (AKS) Docker and Docker Hub SonarQube for SAST Scans GitHub Actions for CI/CD Trivy for Container Security
 Pipeline Architecture
 
-**The pipeline architecture integrates the following stages:**
+**The pipeline workflow integrates the following stages:**
 
 **Code Commit:** Push code changes to GitHub.
 
