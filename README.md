@@ -65,6 +65,15 @@ Pipeline Architecture
 **Security Scanning:** Scan images with Trivy for vulnerabilities.
 
 **Deployment:** Deploy to AKS using ArgoCD.
+# Ultimate DevSecOps Repo
+
+## Modules
+
+### Module 1
+- [Step 1](./Module1/Step1/README.md)
+- [Step 2](./Module1/Step2/README.md)
+- [Step 3](./Module1/Step3/README.md)
+
 
 
 
