@@ -18,6 +18,7 @@ Click on the Start free button. This will direct you to the signup page.
 **3. Sign In or Create a Microsoft Account**
 
 If you already have a Microsoft account, sign in using your credentials.
+![1](https://github.com/user-attachments/assets/670553d5-2b46-4fbb-a64b-ab3d7cc3d5d2)
 
 
 If you don’t have an account, click on Create one to set up a new Microsoft account.
