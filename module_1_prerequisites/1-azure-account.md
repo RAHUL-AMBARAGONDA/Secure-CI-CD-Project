@@ -7,6 +7,7 @@ Objective To set up a free Azure cloud account for hosting resources required fo
 **1. Navigate to the Azure Free Account Page**
 
 Open your web browser and go to the Azure Free Account page.
+![Screenshot (14)](https://github.com/user-attachments/assets/d5949d71-6769-46e5-88f8-835daab60693)
 
 
 
