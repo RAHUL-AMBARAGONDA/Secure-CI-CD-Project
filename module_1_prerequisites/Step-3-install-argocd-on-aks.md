@@ -80,6 +80,10 @@ kubectl get svc -n argocd
 ```bash
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 ```
+
+![Screenshot (17)](https://github.com/user-attachments/assets/6e37d212-b47d-4aa9-b27d-e02e85dadfb6)
+
+
 - **Purpose**: Retrieves the initial admin password for ArgoCD login.
 - **Explanation**:
   - `kubectl -n argocd get secret argocd-initial-admin-secret` retrieves the ArgoCD admin secret from the `argocd` namespace.
