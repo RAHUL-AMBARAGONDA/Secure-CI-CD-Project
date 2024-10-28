@@ -32,6 +32,7 @@ Last Name
 Phone Number (You may choose to receive a verification code via SMS or call)
 Email Address (Use your Microsoft account email)
 Country/Region
+![222](https://github.com/user-attachments/assets/068fea6b-0189-47f3-aa00-2d8241936acc)
 
 **5. Verify Your Identity**
 
