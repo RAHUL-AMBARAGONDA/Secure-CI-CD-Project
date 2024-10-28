@@ -70,6 +70,7 @@ kubectl get svc -n argocd
 
    - **Explanation**: After getting the IP and port, you can enter it in the format `http://<External-IP>:<Port>` in a browser to access the ArgoCD UI.
    - If you see a "Not Secure" warning, proceed by selecting **Advanced** and clicking **Proceed** to open the UI.
+   - below is the image of argo cd ui:
    - 
    - ![Screenshot (16)](https://github.com/user-attachments/assets/417f520f-e37b-44b3-a572-693f2a625ca5)
 
@@ -80,16 +81,15 @@ kubectl get svc -n argocd
 ```bash
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 ```
-
-![Screenshot (17)](https://github.com/user-attachments/assets/6e37d212-b47d-4aa9-b27d-e02e85dadfb6)
-
-
 - **Purpose**: Retrieves the initial admin password for ArgoCD login.
 - **Explanation**:
   - `kubectl -n argocd get secret argocd-initial-admin-secret` retrieves the ArgoCD admin secret from the `argocd` namespace.
   - `-o jsonpath="{.data.password}"` extracts the password field.
   - `base64 -d` decodes the password, which is stored in base64.
   - `echo` prints the password to the terminal for easy copying.
+ 
+  - ![Screenshot (17)](https://github.com/user-attachments/assets/6e37d212-b47d-4aa9-b27d-e02e85dadfb6)
+  - 
 By this we successfully completed installing argocd on aks cluster
 
 
