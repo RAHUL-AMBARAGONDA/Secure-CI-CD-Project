@@ -70,6 +70,9 @@ kubectl get svc -n argocd
 
    - **Explanation**: After getting the IP and port, you can enter it in the format `http://<External-IP>:<Port>` in a browser to access the ArgoCD UI.
    - If you see a "Not Secure" warning, proceed by selecting **Advanced** and clicking **Proceed** to open the UI.
+
+   - ![R](https://github.com/user-attachments/assets/a55c850d-a05d-43aa-9b30-090db317255c)
+   - 
    - below is the image of argo cd ui:
    - 
    - ![Screenshot (16)](https://github.com/user-attachments/assets/417f520f-e37b-44b3-a572-693f2a625ca5)
