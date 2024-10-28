@@ -1,74 +1,87 @@
 **Module 2: Installing ArgoCD on AKS**
 
-In this module, you’ll connect to your AKS cluster, create a namespace for ArgoCD, install ArgoCD, and set up a LoadBalancer to access the ArgoCD UI. Follow each step carefully to complete the setup.
+**Step 1: Connect to AKS Cluster**
 
----
-**Prerequisites**
-- Azure CLI installed and configured
-- AKS cluster created (as completed in Module 1)
+```bash
+az aks get-credentials --resource-group <resource-group> --name <aks-cluster-name>
+```
+- **Purpose**: Connects your local machine to your AKS (Azure Kubernetes Service) cluster by retrieving the cluster credentials.
+- **Explanation**: 
+  - `az aks get-credentials` is an Azure CLI command that fetches and configures the kubectl credentials.
+  - `--resource-group <resource-group>` specifies the Azure resource group where your AKS cluster is hosted.
+  - `--name <aks-cluster-name>` is the name of the AKS cluster you want to connect to.
+  
+**Step 2: Create a Namespace for ArgoCD**
 
----
+```bash
+kubectl create namespace argocd
+```
+- **Purpose**: Creates a separate namespace in Kubernetes called `argocd`.
+- **Explanation**:
+  - `kubectl create namespace` is a Kubernetes command to create a new namespace.
+  - Namespaces in Kubernetes are used to organize resources and separate workloads for different environments or applications.
 
-**Step-by-Step Guide**
+**Step 3: Install ArgoCD in the `argocd` Namespace**
 
-**1. Connect to AKS Cluster**
+```bash
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+- **Purpose**: Installs ArgoCD using predefined YAML configurations from the ArgoCD GitHub repository.
+- **Explanation**:
+  - `kubectl apply -n argocd` applies the YAML configuration to the `argocd` namespace.
+  - `-f` specifies the file or URL containing the YAML configuration.
+  - The URL points to ArgoCD’s installation manifest, which defines all the necessary resources (pods, services, roles) needed to run ArgoCD on Kubernetes.
 
-   1. Go to your AKS cluster overview in the Azure Portal.
-   2. Click on **Connect**.
-   3. Copy the provided command to connect to your cluster and paste it in Azure CLI.
+**Step 4: Verify ArgoCD Resources**
+
+```bash
+kubectl get all -n argocd
+```
+- **Purpose**: Lists all resources (pods, services, etc.) created by ArgoCD in the `argocd` namespace.
+- **Explanation**:
+  - `kubectl get all` retrieves all resource types, including pods, services, deployments, etc.
+  - `-n argocd` limits the command to display resources only within the `argocd` namespace.
+  - This command helps verify that ArgoCD components have been correctly deployed.
+
+**Step 5: Set Up LoadBalancer for External Access**
+
+```bash
+kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
+```
+- **Purpose**: Changes the `argocd-server` service type to LoadBalancer, allowing external access.
+- **Explanation**:
+  - `kubectl patch svc` updates the configuration of the specified service.
+  - `argocd-server` is the name of the service to be patched.
+  - `-n argocd` specifies the `argocd` namespace.
+  - `-p '{"spec": {"type": "LoadBalancer"}}'` updates the service spec to type `LoadBalancer`, which provides a public IP.
+
+**Step 6: Retrieve LoadBalancer IP and Port**
+
+```bash
+kubectl get svc -n argocd
+```
+- **Purpose**: Retrieves service details, including the external IP address of the `argocd-server` service.
+- **Explanation**:
+  - `kubectl get svc` lists all services.
+  - `-n argocd` limits the output to the `argocd` namespace.
+  - The external IP and port are necessary for accessing the ArgoCD UI from a browser.
+
+**Step 7: Access ArgoCD in Browser**
+
+   - **Explanation**: After getting the IP and port, you can enter it in the format `http://<External-IP>:<Port>` in a browser to access the ArgoCD UI.
+   - If you see a "Not Secure" warning, proceed by selecting **Advanced** and clicking **Proceed** to open the UI.
    
-   Example:
-   ```bash
-   az aks get-credentials --resource-group <resource-group> --name <aks-cluster-name>
-   ```
+**Step 8: Log into ArgoCD**
 
-**2. Create a Namespace for ArgoCD**
+```bash
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+```
+- **Purpose**: Retrieves the initial admin password for ArgoCD login.
+- **Explanation**:
+  - `kubectl -n argocd get secret argocd-initial-admin-secret` retrieves the ArgoCD admin secret from the `argocd` namespace.
+  - `-o jsonpath="{.data.password}"` extracts the password field.
+  - `base64 -d` decodes the password, which is stored in base64.
+  - `echo` prints the password to the terminal for easy copying.
+By this we successfully completed installing argocd on aks cluster
 
-   Run the following command to create a namespace:
-   ```bash
-   kubectl create namespace argocd
-   ```
-
-**3. Install ArgoCD in the `argocd` Namespace**
-
-   Use the following command to install ArgoCD:
-   ```bash
-   kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-   ```
-
-**4. Verify ArgoCD Resources**
-
-   After installation, verify that the resources have been created with:
-   ```bash
-   kubectl get all -n argocd
-   ```
-
-**5. Set Up LoadBalancer for External Access**
-
-   To access ArgoCD from a browser, patch the ArgoCD service to use a LoadBalancer:
-   ```bash
-   kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'
-   ```
-
-**6. Retrieve LoadBalancer IP and Port**
-
-   Get the LoadBalancer's public IP and port with:
-   ```bash
-   kubectl get svc -n argocd
-   ```
-
-**7. Log into ArgoCD**
-
-   - **Username**: `admin`
-   - **Initial Password**: Retrieve it using this command:
-     ```bash
-     kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
-     ```
-   - Use the LoadBalancer IP and port to access ArgoCD in your browser and log in.
-
----
-
-### Additional Notes
-- Be sure to replace `<resource-group>` and `<aks-cluster-name>` with your actual resource group and cluster names.
-- The default ArgoCD admin password is encoded in a Kubernetes secret; remember to change the password after logging in.
 
