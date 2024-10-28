@@ -1,4 +1,4 @@
- Module 2: Installing ArgoCD on AKS
+**Module 2: Installing ArgoCD on AKS**
 
 In this module, you’ll connect to your AKS cluster, create a namespace for ArgoCD, install ArgoCD, and set up a LoadBalancer to access the ArgoCD UI. Follow each step carefully to complete the setup.
 
