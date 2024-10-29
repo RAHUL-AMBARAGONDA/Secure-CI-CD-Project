@@ -3,20 +3,20 @@
 
 **Table of Contents**
 
-Introduction
-Prerequisites
-Project Overview
-Pipeline Architecture
-Step-by-Step Implementation
-1. Clone the Repository
-2. Set Up GitHub Actions
-3. Configure SonarQube for SAST
-4. Dockerize the Mario Game
-5. Implement Dynamic Tagging
-6. Deploy to AKS with ArgoCD
-7. Validate End-to-End Pipeline Execution
-Conclusion
-License
+1. Introduction
+2. Prerequisites
+3. Project Overview
+4. Pipeline Architecture
+5. Step-by-Step Implementation
+6. Clone the Repository
+7. Set Up GitHub Actions
+8. Configure SonarQube for SAST
+9. Dockerize the Mario Game
+10. Implement Dynamic Tagging
+11. Deploy to AKS with ArgoCD
+12. Validate End-to-End Pipeline Execution
+13. Conclusion
+
 
 **Project Introduction:** Secure DevSecOps Pipeline for Infinite Mario Game In this project, we establish a secure, automated DevSecOps pipeline to manage the development, security, and deployment lifecycle of the Infinite Mario JavaScript game. This project demonstrates the full DevSecOps workflow, from code quality checks and security scans to seamless container deployment in a Kubernetes environment. By implementing a robust CI/CD process, we enable automated detection of vulnerabilities, streamlined deployments, and secure infrastructure, all in a highly adaptable, cloud-based setup.
 
