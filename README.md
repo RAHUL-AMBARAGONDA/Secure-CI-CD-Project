@@ -79,7 +79,7 @@ Pipeline Architecture
 ## Modules
 
 ## Module 1 :DevSecOps Case Study and Prerequisites
-- [**Step 1:** Project requirements](./module_1_prerequisites/step-2-creating-AKS)
+- [**Step 1:** Project requirements](module_1_prerequisites/step-2-creating-AKS cluster.md)
 - [**Step 2:** Creating Azure Free Trail](./module_1_prerequisites/1-azure-account.md)
 - [**Step 3:** install Argo-Cd on Aks](./module_1_prerequisites/Step-3-install-argocd-on-aks.md)
 
