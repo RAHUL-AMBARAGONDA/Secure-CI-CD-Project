@@ -21,7 +21,13 @@ License
 
 **This project aims to deliver:**
 
-**Automated Code Quality and Security:** Integration with SonarQube for Static Application Security Testing (SAST) to ensure high code quality and detect potential security issues at an early stage. Container Security: Use of Trivy and other tools to scan for vulnerabilities in container images before deployment. Infrastructure-as-Code (IaC): Efficient deployment and management of the Infinite Mario game within Azure Kubernetes Service (AKS), allowing rapid scaling and seamless updates. Continuous Deployment: Leverage GitHub Actions workflows to automate CI/CD processes, ensuring rapid and reliable releases with every code change.
+**Automated Code Quality and Security:** Integration with SonarQube for Static Application Security Testing (SAST) to ensure high code quality and detect potential security issues at an early stage. 
+
+**Container Security:** Use of Trivy and other tools to scan for vulnerabilities in container images before deployment.
+
+**Infrastructure-as-Code (IaC):** Efficient deployment and management of the Infinite Mario game within Azure Kubernetes Service (AKS), allowing rapid scaling and seamless updates.
+
+**Continuous Deployment:** Leverage GitHub Actions workflows to automate CI/CD processes, ensuring rapid and reliable releases with every code change.
 
 **Project Prerequisites**
 
