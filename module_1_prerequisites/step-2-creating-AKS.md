@@ -8,7 +8,7 @@
 
 ---
 
-#### **2. Configure Basic Cluster Settings**
+# **2. Configure Basic Cluster Settings**
 
 Under the **Basics** tab:
 
@@ -22,20 +22,20 @@ Under the **Basics** tab:
 
 ---
 
-#### **3. Configure Kubernetes Version and Upgrade Settings**
+# **3. Configure Kubernetes Version and Upgrade Settings**
 
 1. **Kubernetes Version**: Select **1.27.7** (the default version available).
 2. **Automatic Upgrade**: Set to **Disabled** to manually control version upgrades.
 
 ---
 
-#### **4. Set Authentication and Authorization Options**
+#  **4. Set Authentication and Authorization Options**
 
 1. **Authentication Method**: Choose **Local Accounts with Kubernetes RBAC** to enable Role-Based Access Control for added security.
    
 ---
 
-#### **5. Configure Node Security and Scheduling**
+#  **5. Configure Node Security and Scheduling**
 
 1. **Node Security Channel Type**: Set **Node Image** as the security channel type.
 2. **Scheduler Option**: Choose **No Schedule** to prevent unnecessary load on nodes reserved for security tasks.
@@ -45,13 +45,13 @@ Under the **Basics** tab:
 This configuration establishes the foundational setup for your Kubernetes cluster in Azure, ensuring a cost-effective environment with essential RBAC controls and custom version management, ideal for DevSecOps testing. 
 
 Let me know if you’re ready to proceed to the next steps, where we’ll create and co
-### **Step 3: Configuring Node Pools for Kubernetes Cluster**
+# **Step 3: Configuring Node Pools for Kubernetes Cluster**
 
 In this step, we will configure the node pools for our Kubernetes cluster to define the resource allocation and scaling behavior for the nodes that make up the cluster. 
 
 ---
 
-#### **Understanding Node Pool Quotas and Limitations (Free Tier)**
+# **Understanding Node Pool Quotas and Limitations (Free Tier)**
 
 In the **Free Tier** of Azure, there is a **quota limit of 4 node pools** with a total capacity of **4 vCPUs**. This means that:
 
@@ -62,7 +62,7 @@ In the **Free Tier** of Azure, there is a **quota limit of 4 node pools** with a
 
 ---
 
-#### **Node Pool Configuration Steps**
+# **Node Pool Configuration Steps**
 
 1. **Delete the Default System Node Pool (Optional for Paid Tier)**
    - Since the Free Tier has limited capacity, delete the default **system node pool** created by Azure.
@@ -93,13 +93,13 @@ In the **Free Tier** of Azure, there is a **quota limit of 4 node pools** with a
 
 This setup provides a flexible, efficient foundation within Azure’s Free Tier, allocating resources specifically for system functions and user workloads. When ready, we’ll proceed to containerize and deploy the application on this Kubernetes infrastructure. Let me know if you’d like further customization details!
 
-### **Step 4: Configuring the User Node Pool in Kubernetes Cluster**
+# **Step 4: Configuring the User Node Pool in Kubernetes Cluster**
 
 With the system node pool configured, we’ll now add a **user node pool** that will manage our application workloads within the Kubernetes cluster. This setup allows us to distribute the cluster's responsibilities, separating system processes from user-defined workloads.
 
 ---
 
-#### **User Node Pool Configuration**
+# **User Node Pool Configuration**
 
 Configure the settings for the **User Node Pool** as follows:
 
@@ -134,13 +134,13 @@ With the **system** and **user node pools** set up, your Kubernetes cluster is n
 
 Let me know when you're ready to move forward or if you need additional customization!
 
-### **Step 5: Configuring Networking for the Kubernetes Cluster**
+# **Step 5: Configuring Networking for the Kubernetes Cluster**
 
 Configuring networking is a critical step to control how your Kubernetes cluster communicates within the Azure environment and with external resources. We’ll use the **kubenet** network plugin, a simple and effective choice for smaller clusters.
 
 ---
 
-#### **Networking Configuration**
+# **Networking Configuration**
 
 1. **Public Access**  
    - **Set Authorized IP Ranges**: Define which IP ranges can access the cluster if public access is enabled. By default, all IP ranges are blocked unless specified, enhancing security by controlling access to the Kubernetes API server.
@@ -171,7 +171,7 @@ With the networking configured, your cluster is now accessible via controlled pu
 
 Let me know if you'd like to continue with further configuration or any additional clarifications on networking!
 
-### **Finalizing Cluster Configuration**
+# **Finalizing Cluster Configuration**
 
 1. **Set Other Options to Default**  
    For this demo setup, all remaining configuration settings that we haven’t explicitly defined can remain at their default values. This keeps the setup straightforward and avoids additional complexity.
@@ -184,7 +184,7 @@ Let me know if you'd like to continue with further configuration or any addition
 
 ---
 
-### **Deployment Confirmation**
+# **Deployment Confirmation**
 Once you press **Create**, Azure will start provisioning your Kubernetes cluster. This process may take a few minutes. Upon completion, you’ll see a notification in the Azure portal confirming the successful creation of `demoKubernetesCluster`.
 
 ---
