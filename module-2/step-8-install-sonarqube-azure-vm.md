@@ -11,7 +11,7 @@
 
 #### Step 3: Configure Project Details
 
-![Screenshot (21)](https://github.com/user-attachments/assets/2cf13160-636d-4291-91e1-02f2027b42b8)
+![Screenshot (20)](https://github.com/user-attachments/assets/9ada7dfa-2ecd-490d-9dbb-0cfe262e2072)
 
 
 1. **Subscription**: Select your subscription (e.g., **Free Trial**).
