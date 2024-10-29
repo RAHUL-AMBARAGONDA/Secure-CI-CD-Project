@@ -11,8 +11,7 @@
 
 #### Step 3: Configure Project Details
 
-![Screenshot (20)](https://github.com/user-attachments/assets/9ada7dfa-2ecd-490d-9dbb-0cfe262e2072)
-
+![Screenshot (20)](https://github.com/user-attachments/assets/8d17b505-70a8-44ee-a350-10acf543de0f)
 
 1. **Subscription**: Select your subscription (e.g., **Free Trial**).
 2. **Resource group**: Choose the previously created resource group (`demo-resource-group`).
