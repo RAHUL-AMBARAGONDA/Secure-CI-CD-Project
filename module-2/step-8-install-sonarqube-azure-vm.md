@@ -13,6 +13,7 @@
 
 ![Screenshot (21)](https://github.com/user-attachments/assets/2cf13160-636d-4291-91e1-02f2027b42b8)
 
+
 1. **Subscription**: Select your subscription (e.g., **Free Trial**).
 2. **Resource group**: Choose the previously created resource group (`demo-resource-group`).
 3. **Virtual machine name**: Enter `sonar-vm`.
