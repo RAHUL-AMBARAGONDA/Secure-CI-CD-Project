@@ -1,4 +1,4 @@
-**Module 2: Installing ArgoCD on AKS**
+# **Module 2: Installing ArgoCD on AKS**
 
 **Step 1: Connect to AKS Cluster**
 
