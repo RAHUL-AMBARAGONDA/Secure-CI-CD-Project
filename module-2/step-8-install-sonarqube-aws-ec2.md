@@ -12,6 +12,8 @@
 4. Select your subscription (e.g., **Free Trial**).
 5. Choose the region (e.g., **(Europe) UK West**).
 6. Click **Review + create** and then **Create**.
+
+   
    
 
 #### Step 3: Create a Virtual Machine
@@ -60,4 +62,4 @@
    Make sure to replace `/path/to/your/private/key` with the path where your private key is stored.
 
 ### Conclusion
-You have successfully created a virtual machine in Azure named `sonar-vm` within the `demo-resource-group`, using default settings for all other sections. You can now access it using SSH and begin your work with this VM. If you have any further questions or need additional configurations, feel free to ask!
+You have successfully created a virtual machine in Azure named `sonar-vm` within the `demo-resource-group`, using default settings for all other sections. You can now access it using SSH and begin your work with this VM.
