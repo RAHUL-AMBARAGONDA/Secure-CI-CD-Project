@@ -11,13 +11,7 @@
 
 #### Step 3: Configure Project Details
 
-1. In the Azure portal, click on **Resource groups** from the left-hand menu.
-2. Click on the **+ Create** button.
-3. In the **Resource group** name field, enter `demo-resource-group`.
-4. Select your subscription (e.g., **Free Trial**).
-5. Choose the region (e.g., **(Europe) UK West**).
-6. Click **Review + create** and then **Create**.
-
+![Screenshot (21)](https://github.com/user-attachments/assets/2cf13160-636d-4291-91e1-02f2027b42b8)
 
 1. **Subscription**: Select your subscription (e.g., **Free Trial**).
 2. **Resource group**: Choose the previously created resource group (`demo-resource-group`).
