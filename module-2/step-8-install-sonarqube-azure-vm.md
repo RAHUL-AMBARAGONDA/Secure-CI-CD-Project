@@ -31,13 +31,11 @@
 
 #### Step 5: Configure Administrator Account
 
-![Screenshot (21)](https://github.com/user-attachments/assets/4fa08561-6ba6-4c36-97c7-61b318efa759)
 
-1. **Authentication type**: Select **SSH public key** (default).
-2. **Username**: Enter `azureuser` (default).
-3. **SSH public key source**: Choose **Generate new key pair** (default).
-4. **SSH Key Type**: Select **RSA SSH Format** (default).
-5. **Key pair name**: Enter `new-vm` (default).
+
+Authentication type: Select Password instead of SSH public key.
+Username: Enter azureuser (default).
+Password: Enter a strong password (ensure it meets Azure's password complexity requirements).
 
 #### Step 6: Configure Inbound Port Rules
 1. **Public inbound ports**: Select **Allow selected ports** (default).
@@ -49,15 +47,16 @@
 3. Click on **Create** to provision the virtual machine.
 
 #### Step 8: Access Your Virtual Machine
-1. Once the VM is created, navigate to the **Virtual machines** section.
-2. Click on `sonar-vm` to view its details.
-3. To connect via SSH, use a terminal or SSH client. Run the following command (replace `<public-ip>` with the actual public IP of your VM):
+Once the VM is created, navigate to the Virtual machines section.
 
-   ```bash
-   ssh azureuser@<public-ip> -i /path/to/your/private/key
-   ```
+Click on sonar-vm to view its details.
 
-   Make sure to replace `/path/to/your/private/key` with the path where your private key is stored.
+To connect via SSH, use a terminal or SSH client. Run the following command (replace <public-ip> with the actual public IP of your VM):
+
+bash
+Copy code
+ssh azureuser@<public-ip>
+Note: You will be prompted to enter the password you set during the VM creation.
 
 ### Conclusion
 You have successfully created a virtual machine in Azure named `sonar-vm` within the `demo-resource-group`, using default settings for all other sections. You can now access it using SSH and begin your work with this VM.
