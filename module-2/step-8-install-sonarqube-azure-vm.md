@@ -21,6 +21,9 @@
 6. **Security type**: Choose **Trusted launch virtual machines** (default).
 
 #### Step 4: Configure Image and Size
+
+![Screenshot (22)](https://github.com/user-attachments/assets/a5e78221-2fc6-403d-9617-083a2df3d131)
+
 1. **Image**: From the dropdown, select **Ubuntu Pro 24.04 LTS - x64 Gen2** (default).
 2. **VM architecture**: Select **x64** (default).
 3. **Size**: Click on **See all sizes**. Choose **Standard_B2s - 2 vCPUs, 4 GiB memory** (default).
