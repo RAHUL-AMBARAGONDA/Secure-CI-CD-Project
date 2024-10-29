@@ -100,4 +100,203 @@ You have successfully created a virtual machine in Azure named `sonar-vm` within
 2. Under **Inbound port rules**, verify that the new rule for TCP port `9000` is listed alongside the existing rules.
 
 ### Conclusion
-You have successfully configured the inbound port rules for your Azure VM, allowing access on TCP port 9000 in addition to SSH (port 22). This configuration enables external traffic to reach your applications that may be running on port 9000, facilitating better functionality and access. If you have any further questions or need additional assistance, feel free to ask!
+You have successfully configured the inbound port rules for your Azure VM, allowing access on TCP port 9000 in addition to SSH (port 22). This configuration enables external traffic to reach your applications that may be running on port 9000, facilitating better functionality and access. 
+Here’s a detailed, step-by-step guide to set up SonarQube on a Dockerized environment, using a `docker-compose.yml` file that includes both SonarQube and PostgreSQL as a database.
+
+---
+
+### Step 1: Verify System Requirements
+
+1. **RAM**: Make sure the instance has at least **4 GB of RAM**.
+2. **Port 9000**: Ensure **port 9000 is open** as this is the default port for accessing SonarQube.
+
+---
+
+### Step 2: Configure System Settings
+
+SonarQube requires certain kernel settings for optimal operation. You’ll modify the system configuration file to add these settings.
+
+1. **Open the sysctl configuration file**:
+   ```bash
+   sudo vi /etc/sysctl.conf
+   ```
+   This command opens the file in the `vi` editor with superuser privileges.
+
+2. **Add the following configurations** to the end of the file:
+   ```bash
+   vm.max_map_count=262144
+   fs.file-max=65536
+   ```
+   - `vm.max_map_count=262144`: Sets the maximum number of memory map areas a process may have. SonarQube requires this setting for efficient memory handling.
+   - `fs.file-max=65536`: Sets the maximum number of file descriptors available to the system, ensuring SonarQube has adequate resources.
+
+3. **Save and Exit**:
+   - In `vi`, press `Esc`, then type `:wq` and press `Enter` to save and close the file.
+
+4. **Apply the changes**:
+   ```bash
+   sudo sysctl -p
+   ```
+   This command reloads the kernel parameters, applying your changes immediately.
+
+---
+
+### Step 3: Set the Hostname for Clarity
+
+1. **Set the hostname to “SonarQube”**:
+   ```bash
+   sudo hostnamectl set-hostname SonarQube
+   ```
+   Setting the hostname to “SonarQube” helps in identifying the instance in multi-instance environments.
+
+---
+
+### Step 4: Update the System Packages
+
+1. **Update package information** to ensure you have the latest versions:
+   ```bash
+   sudo apt update
+   ```
+
+---
+
+### Step 5: Install Docker Compose
+
+SonarQube and PostgreSQL will be managed by Docker Compose, which requires installation if not already present.
+
+1. **Install Docker Compose**:
+   ```bash
+   sudo apt install docker-compose -y
+   ```
+   The `-y` flag automatically confirms installation prompts.
+
+---
+
+### Step 6: Create the Docker Compose File
+
+The `docker-compose.yml` file will define the configuration for both SonarQube and PostgreSQL services.
+
+1. **Create and open the `docker-compose.yml` file**:
+   ```bash
+   sudo vi docker-compose.yml
+   ```
+   
+2. **Copy and paste the following content into the file**:
+   ```yaml
+   version: "3"
+   services:
+     sonarqube:
+       image: sonarqube:community
+       restart: unless-stopped
+       depends_on:
+         - db
+       environment:
+         SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonar
+         SONAR_JDBC_USERNAME: sonar
+         SONAR_JDBC_PASSWORD: sonar
+       volumes:
+         - sonarqube_data:/opt/sonarqube/data
+         - sonarqube_extensions:/opt/sonarqube/extensions
+         - sonarqube_logs:/opt/sonarqube/logs
+       ports:
+         - "9000:9000"
+     db:
+       image: postgres:12
+       restart: unless-stopped
+       environment:
+         POSTGRES_USER: sonar
+         POSTGRES_PASSWORD: sonar
+       volumes:
+         - postgresql:/var/lib/postgresql
+         - postgresql_data:/var/lib/postgresql/data
+   volumes:
+     sonarqube_data:
+     sonarqube_extensions:
+     sonarqube_logs:
+     postgresql:
+     postgresql_data:
+   ```
+
+   **Explanation of Configuration**:
+   - **Services**:
+     - `sonarqube`: Specifies SonarQube as a service using the community edition image. It restarts automatically unless explicitly stopped. It also depends on the `db` service.
+       - **Environment Variables**:
+         - `SONAR_JDBC_URL`: Connection string to the PostgreSQL database.
+         - `SONAR_JDBC_USERNAME` and `SONAR_JDBC_PASSWORD`: Credentials for SonarQube to access the PostgreSQL database.
+       - **Volumes**: Directories within the SonarQube container are mapped to Docker volumes for persistence.
+       - **Ports**: Exposes port `9000` for accessing SonarQube.
+     - `db`: Specifies PostgreSQL as a service, required by SonarQube for data storage. It also restarts automatically unless stopped.
+       - **Environment Variables**:
+         - `POSTGRES_USER` and `POSTGRES_PASSWORD`: Defines the database user and password for SonarQube.
+       - **Volumes**: Configures Docker volumes to store database files persistently.
+
+   - **Volumes**:
+     - Defines Docker volumes for data persistence.
+
+3. **Save and Exit**:
+   - In `vi`, press `Esc`, then type `:wq` and press `Enter` to save and close.
+
+---
+
+### Step 7: Run Docker Compose
+
+Now that the configuration file is ready, start the services using Docker Compose.
+
+1. **Start the SonarQube and PostgreSQL services**:
+   ```bash
+   sudo docker-compose up -d
+   ```
+   - The `-d` flag runs the services in the background.
+   - Docker Compose will download the required images and set up the services based on the `docker-compose.yml` configuration.
+
+---
+
+### Step 8: Verify SonarQube Status
+
+1. **Check the logs** to ensure SonarQube is running correctly:
+   ```bash
+   sudo docker-compose logs --follow
+   ```
+   - This command will display real-time logs, allowing you to confirm that the services started without issues.
+   - Look for logs indicating that SonarQube is up and listening on port 9000.
+   - **Note**: Press `CTRL + C` to exit the log view once you’ve confirmed everything is working.
+
+---
+
+### Step 9: Access SonarQube UI
+
+1. **Open a web browser** and go to the following URL to access SonarQube’s interface:
+   ```
+   http://<your_SonarQube_publicdns_name>:9000/
+   ```
+   - Replace `<your_SonarQube_publicdns_name>` with your instance's public DNS name or IP address.
+   - Once the page loads, you should see the SonarQube login screen, indicating a successful setup.
+
+---
+
+### Summary of Commands
+
+```bash
+# Step 1: Edit sysctl configuration
+sudo vi /etc/sysctl.conf
+
+# Step 2: Set the hostname
+sudo hostnamectl set-hostname SonarQube
+
+# Step 3: Update system packages
+sudo apt update
+
+# Step 4: Install Docker Compose
+sudo apt install docker-compose -y
+
+# Step 5: Create docker-compose.yml file
+sudo vi docker-compose.yml
+
+# Step 6: Run Docker Compose
+sudo docker-compose up -d
+
+# Step 7: Check the logs
+sudo docker-compose logs --follow
+```
+
+This completes the setup of SonarQube using Docker Compose, with PostgreSQL as the database. You should now have a fully operational SonarQube instance accessible via your browser.
