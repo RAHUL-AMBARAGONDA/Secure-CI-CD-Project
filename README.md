@@ -21,7 +21,7 @@ License
 
 **This project aims to deliver:**
 
-Automated Code Quality and Security: Integration with SonarQube for Static Application Security Testing (SAST) to ensure high code quality and detect potential security issues at an early stage. Container Security: Use of Trivy and other tools to scan for vulnerabilities in container images before deployment. Infrastructure-as-Code (IaC): Efficient deployment and management of the Infinite Mario game within Azure Kubernetes Service (AKS), allowing rapid scaling and seamless updates. Continuous Deployment: Leverage GitHub Actions workflows to automate CI/CD processes, ensuring rapid and reliable releases with every code change.
+**Automated Code Quality and Security:** Integration with SonarQube for Static Application Security Testing (SAST) to ensure high code quality and detect potential security issues at an early stage. Container Security: Use of Trivy and other tools to scan for vulnerabilities in container images before deployment. Infrastructure-as-Code (IaC): Efficient deployment and management of the Infinite Mario game within Azure Kubernetes Service (AKS), allowing rapid scaling and seamless updates. Continuous Deployment: Leverage GitHub Actions workflows to automate CI/CD processes, ensuring rapid and reliable releases with every code change.
 
 **Project Prerequisites**
 
@@ -53,6 +53,7 @@ Azure Kubernetes Service (AKS) Docker and Docker Hub SonarQube for SAST Scans Gi
 Pipeline Architecture
 
 **The pipeline workflow integrates the following stages:**
+
 ![WhatsApp Image 2024-10-26 at 9 44 21 PM](https://github.com/user-attachments/assets/76c2f2b6-4ff2-48cd-9cfc-11d7bb0e1089)
 
 
