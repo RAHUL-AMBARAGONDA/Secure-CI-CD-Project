@@ -67,12 +67,13 @@ You have successfully created a virtual machine in Azure named `sonar-vm` within
 
 #### Step 1: Navigate to Your Virtual Machine
 
-![Screenshot (26)](https://github.com/user-attachments/assets/43520793-0f87-4523-b63e-ab6d3007cf6d)
 
 1. In the left-hand menu, click on **Virtual machines**.
 2. From the list of virtual machines, click on the name of your VM (e.g., **sonar-vm**).
 
 #### Step 2: Go to Networking Settings
+![Screenshot (26)](https://github.com/user-attachments/assets/43520793-0f87-4523-b63e-ab6d3007cf6d)
+
 1. In the left-hand menu of your VM's overview page, scroll down and click on **Networking**.
 
 #### Step 3: Configure Inbound Port Rules
