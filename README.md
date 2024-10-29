@@ -88,7 +88,7 @@ Pipeline Architecture
 
 ## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
 
-[**Step 1.** Install SonarQube on Azure VM Instance](module-2/step-8-install-sonarqube-aws-ec2.md)
+[**Step 1.** Install SonarQube on Azure VM Instance](module-2/step-8-install-sonarqube-azure-vm.md)
 
 [**Step 2.** Clone Mario GitHub Repository](module-2/step-9-clone-mario-repo.md)
 
