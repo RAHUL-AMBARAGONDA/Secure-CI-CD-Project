@@ -21,6 +21,9 @@
 2. Click on the **+ Create** button, then select **Azure virtual machine**.
 
 #### Step 4: Configure Project Details
+
+![Screenshot (21)](https://github.com/user-attachments/assets/4fa08561-6ba6-4c36-97c7-61b318efa759)
+
 1. **Subscription**: Select your subscription (e.g., **Free Trial**).
 2. **Resource group**: Choose the previously created resource group (`demo-resource-group`).
 3. **Virtual machine name**: Enter `sonar-vm`.
