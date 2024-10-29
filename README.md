@@ -79,19 +79,19 @@ Pipeline Architecture
 ## Modules
 
 ## Module 1 :DevSecOps Case Study and Prerequisites
-- [Step 1 Project requirements](./module_1_prerequisites)
-- [Step 2 Creating Azure Free Trail](./module_1_prerequisites/1-azure-account.md)
-- [Step 3 install Argo-Cd on Aks](./module_1_prerequisites/Step-3-install-argocd-on-aks.md)
+- [**Step 1:** Project requirements](./module_1_prerequisites)
+- [**Step 2:** Creating Azure Free Trail](./module_1_prerequisites/1-azure-account.md)
+- [**Step 3:** install Argo-Cd on Aks](./module_1_prerequisites/Step-3-install-argocd-on-aks.md)
 
 ## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
 
 1. [Install SonarQube on AWS EC2 Instance](module-2/step-8-install-sonarqube-aws-ec2.md)
 2. [Clone Mario GitHub Repository](./docs/step-9-clone-mario-repo.md)
-3. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 1](./docs/step-10-integrate-sonarqube-sast-part1.md)
-4. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 2](./docs/step-11-integrate-sonarqube-sast-part2.md)
-5. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 3](./docs/step-12-integrate-sonarqube-sast-part3.md)
-6. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 4](./docs/step-13-integrate-sonarqube-sast-part4.md)
-7. [Implement Quality Gates for SAST](./docs/step-14-implement-quality-gates.md)
+3. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 1](module-2/step-10-integrate-sonarqube-sast-part1.md)
+4. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 2](module-2/step-11-integrate-sonarqube-sast-part2.md)
+5. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 3](module-2/step-12-integrate-sonarqube-sast-part3.md)
+6. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 4](module-2/step-13-integrate-sonarqube-sast-part4.md)
+7. [Implement Quality Gates for SAST](module-2/step-14-implement-quality-gates.md)
 
 
 
