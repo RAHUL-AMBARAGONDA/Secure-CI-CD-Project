@@ -88,13 +88,13 @@ Pipeline Architecture
 
 ## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
 
-1. [Install SonarQube on Azure VM Instance](module-2/step-8-install-sonarqube-aws-ec2.md)
-2. [Clone Mario GitHub Repository](./docs/step-9-clone-mario-repo.md)
-3. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 1](module-2/step-10-integrate-sonarqube-sast-part1.md)
-4. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 2](module-2/step-11-integrate-sonarqube-sast-part2.md)
-5. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 3](module-2/step-12-integrate-sonarqube-sast-part3.md)
-6. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 4](module-2/step-13-integrate-sonarqube-sast-part4.md)
-7. [Implement Quality Gates for SAST](module-2/step-14-implement-quality-gates.md)
+step 1. [Install SonarQube on Azure VM Instance](module-2/step-8-install-sonarqube-aws-ec2.md)
+Step 2. [Clone Mario GitHub Repository](./docs/step-9-clone-mario-repo.md)
+Step 3. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 1](module-2/step-10-integrate-sonarqube-sast-part1.md)
+Step 4. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 2](module-2/step-11-integrate-sonarqube-sast-part2.md)
+Stepn5. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 3](module-2/step-12-integrate-sonarqube-sast-part3.md)
+Stepn6. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 4](module-2/step-13-integrate-sonarqube-sast-part4.md)
+Step 7. [Implement Quality Gates for SAST](module-2/step-14-implement-quality-gates.md)
 
 
 
