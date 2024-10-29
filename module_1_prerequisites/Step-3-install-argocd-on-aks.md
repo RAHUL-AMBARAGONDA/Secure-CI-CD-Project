@@ -3,7 +3,7 @@
 **Step 1: Connect to AKS Cluster**
 
 ```bash
-az aks get-credentials --resource-group <resource-group> --name <aks-cluster-name>
+az aks get-credentials --resource-group <demo-resource-group> --name <demoKubernetesCluster>
 ```
 - **Purpose**: Connects your local machine to your AKS (Azure Kubernetes Service) cluster by retrieving the cluster credentials.
 - **Explanation**: 
