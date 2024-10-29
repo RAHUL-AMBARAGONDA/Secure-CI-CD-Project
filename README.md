@@ -61,6 +61,7 @@ Pipeline Architecture
 
 **The pipeline workflow integrates the following stages:**
 
+
 ![WhatsApp Image 2024-10-26 at 9 44 21 PM](https://github.com/user-attachments/assets/76c2f2b6-4ff2-48cd-9cfc-11d7bb0e1089)
 
 
