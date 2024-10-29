@@ -22,8 +22,6 @@
 
 #### Step 4: Configure Project Details
 
-![Screenshot (21)](https://github.com/user-attachments/assets/4fa08561-6ba6-4c36-97c7-61b318efa759)
-
 1. **Subscription**: Select your subscription (e.g., **Free Trial**).
 2. **Resource group**: Choose the previously created resource group (`demo-resource-group`).
 3. **Virtual machine name**: Enter `sonar-vm`.
@@ -38,6 +36,9 @@
 4. **Enable Hibernation**: Ensure this is disabled as it does not support Trusted launch for Linux images (default).
 
 #### Step 6: Configure Administrator Account
+
+![Screenshot (21)](https://github.com/user-attachments/assets/4fa08561-6ba6-4c36-97c7-61b318efa759)
+
 1. **Authentication type**: Select **SSH public key** (default).
 2. **Username**: Enter `azureuser` (default).
 3. **SSH public key source**: Choose **Generate new key pair** (default).
