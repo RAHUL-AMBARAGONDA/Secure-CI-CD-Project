@@ -83,7 +83,7 @@ Pipeline Architecture
 - [Step 2 Creating Azure Free Trail](./module_1_prerequisites/1-azure-account.md)
 - [Step 3 install Argo-Cd on Aks](./module_1_prerequisites/Step-3-install-argocd-on-aks.md)
 
-- ## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
+## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
 
 1. [Install SonarQube on AWS EC2 Instance](./docs/step-8-install-sonarqube-aws-ec2.md)
 2. [Clone Mario GitHub Repository](./docs/step-9-clone-mario-repo.md)
