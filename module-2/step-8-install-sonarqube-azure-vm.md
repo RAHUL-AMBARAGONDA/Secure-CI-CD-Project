@@ -104,7 +104,20 @@ You have successfully configured the inbound port rules for your Azure VM, allow
 Here’s a detailed, step-by-step guide to set up SonarQube on a Dockerized environment, using a `docker-compose.yml` file that includes both SonarQube and PostgreSQL as a database.
 
 ---
-# Setting Up SonarQube on an Azure Virtual Machine for Continuous Code Quality Analysis**
+# Setting Up SonarQube on an Azure Virtual Machine for Continuous Code Quality Analysis
+**Title: Setting Up SonarQube on an Azure Virtual Machine for Continuous Code Quality Analysis**
+
+In this lab, we’ll deploy SonarQube on an Azure Virtual Machine to enable continuous code quality analysis and ensure code meets specific security, maintainability, and reliability standards. SonarQube, a popular tool for static code analysis, helps detect bugs, vulnerabilities, and code smells early in the development process. 
+
+We will:
+
+1. Set up an Azure Virtual Machine as the environment for SonarQube.
+2. Configure the VM with the necessary dependencies for SonarQube.
+3. Install and run SonarQube on the VM.
+4. Verify SonarQube access and configuration for integration into CI/CD pipelines.
+
+By the end of this lab, we’ll have a fully functional SonarQube setup ready for integration into a DevSecOps workflow, allowing automated quality checks and security analysis for code as part of the CI/CD pipeline. This Azure-based setup serves as a scalable solution for enterprise-level quality and security enforcement, reducing risks associated with code deployment.
+
 ### Step 1: Verify System Requirements
 
 1. **RAM**: Make sure the instance has at least **4 GB of RAM**.
