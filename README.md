@@ -81,7 +81,9 @@ Pipeline Architecture
 ## Module 1 :DevSecOps Case Study and Prerequisites
 
 [**Step 1:** Creating Azure Free Trail](./module_1_prerequisites/1-azure-account.md)
+
 [**Step 2:** Creating Aks Cluster](./module_1_prerequisites/step-2-creating-AKS-cluster.md)
+
 [**Step 3:** install Argo-Cd on Aks](./module_1_prerequisites/Step-3-install-argocd-on-aks.md)
 
 ## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
