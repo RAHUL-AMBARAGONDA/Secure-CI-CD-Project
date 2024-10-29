@@ -83,6 +83,9 @@ You have successfully created a virtual machine in Azure named `sonar-vm` within
 2. By default, Azure may have created a rule for SSH (port 22). To add an additional rule, click on **Add inbound port rule**.
 
 #### Step 4: Set Up the New Inbound Port Rule
+
+![Screenshot (30)](https://github.com/user-attachments/assets/9a5f3af2-016b-410e-a8bd-4ed4c9fd31a4)
+
 1. In the **Add inbound security rule** pane, configure the following settings:
    - **Destination port ranges**: Enter `9000`.
    - **Protocol**: Select **TCP** from the dropdown menu.
