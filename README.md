@@ -92,15 +92,6 @@ Pipeline Architecture
 5. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 3](./docs/step-12-integrate-sonarqube-sast-part3.md)
 6. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 4](./docs/step-13-integrate-sonarqube-sast-part4.md)
 7. [Implement Quality Gates for SAST](./docs/step-14-implement-quality-gates.md)
-## Module 2: Integrate Static Application Security Testing (SAST) with SonarQube
-
-1. [Install SonarQube on AWS EC2 Instance](./docs/step-8-install-sonarqube-aws-ec2.md)
-2. [Clone Mario GitHub Repository](./docs/step-9-clone-mario-repo.md)
-3. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 1](./docs/step-10-integrate-sonarqube-sast-part1.md)
-4. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 2](./docs/step-11-integrate-sonarqube-sast-part2.md)
-5. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 3](./docs/step-12-integrate-sonarqube-sast-part3.md)
-6. [Integrate SonarQube for SAST in DevSecOps Pipeline - Part 4](./docs/step-13-integrate-sonarqube-sast-part4.md)
-7. [Implement Quality Gates for SAST](./docs/step-14-implement-quality-gates.md)
 
 
 
