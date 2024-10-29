@@ -60,3 +60,35 @@ Note: You will be prompted to enter the password you set during the VM creation.
 
 ### Conclusion
 You have successfully created a virtual machine in Azure named `sonar-vm` within the `demo-resource-group`, using default settings for all other sections. You can now access it using SSH and begin your work with this VM.
+
+ 
+
+### Now we need to Configure Inbound Port Rules for Your Azure VM
+
+#### Step 1: Navigate to Your Virtual Machine
+1. In the left-hand menu, click on **Virtual machines**.
+2. From the list of virtual machines, click on the name of your VM (e.g., **sonar-vm**).
+
+#### Step 2: Go to Networking Settings
+1. In the left-hand menu of your VM's overview page, scroll down and click on **Networking**.
+
+#### Step 3: Configure Inbound Port Rules
+1. In the **Networking** pane, you will see the **Inbound port rules** section.
+2. By default, Azure may have created a rule for SSH (port 22). To add an additional rule, click on **Add inbound port rule**.
+
+#### Step 4: Set Up the New Inbound Port Rule
+1. In the **Add inbound security rule** pane, configure the following settings:
+   - **Destination port ranges**: Enter `9000`.
+   - **Protocol**: Select **TCP** from the dropdown menu.
+   - **Name**: Optionally, you can enter a name for this rule (e.g., `TCP-9000`).
+   - **Priority**: Leave this at the default or adjust as needed (lower numbers indicate higher priority).
+   - **Action**: Ensure this is set to **Allow**.
+
+2. After entering the necessary information, click on **Add** to create the inbound port rule.
+
+#### Step 5: Verify the Inbound Port Rule
+1. After adding the rule, you will return to the **Networking** pane.
+2. Under **Inbound port rules**, verify that the new rule for TCP port `9000` is listed alongside the existing rules.
+
+### Conclusion
+You have successfully configured the inbound port rules for your Azure VM, allowing access on TCP port 9000 in addition to SSH (port 22). This configuration enables external traffic to reach your applications that may be running on port 9000, facilitating better functionality and access. If you have any further questions or need additional assistance, feel free to ask!
