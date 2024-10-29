@@ -104,7 +104,7 @@ You have successfully configured the inbound port rules for your Azure VM, allow
 Here’s a detailed, step-by-step guide to set up SonarQube on a Dockerized environment, using a `docker-compose.yml` file that includes both SonarQube and PostgreSQL as a database.
 
 ---
-
+# Setting Up SonarQube on an Azure Virtual Machine for Continuous Code Quality Analysis**
 ### Step 1: Verify System Requirements
 
 1. **RAM**: Make sure the instance has at least **4 GB of RAM**.
