@@ -1,6 +1,6 @@
-### **Step-by-Step Guide to Creating the Kubernetes Cluster in Azure**
+# **Step-by-Step Guide to Creating the Kubernetes Cluster in Azure**
 
-#### **1. Access the Kubernetes Cluster Creation Wizard in Azure**
+#  **1. Access the Kubernetes Cluster Creation Wizard in Azure**
 
 1. Log in to your Azure portal at [portal.azure.com](https://portal.azure.com).
 2. In the search bar at the top of the portal, type **Kubernetes services** and select it from the list of services.
@@ -191,4 +191,4 @@ Once you press **Create**, Azure will start provisioning your Kubernetes cluster
 
 Your Azure Kubernetes Service (AKS) cluster is now up and running, configured with secure networking, basic node pools, and an accessible DNS prefix. This setup serves as the foundation for deploying containerized applications securely and efficiently in Azure.
 
-Let me know if you’d like to proceed to the next steps or need any additional details!
+
