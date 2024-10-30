@@ -81,6 +81,9 @@ Here's a detailed, step-by-step guide to clone the "Mario" GitHub repository, se
 8. **Locate and Review the README File**  
    In Visual Studio Code, find and open the `README.md` file. This file typically contains essential project details, instructions, code examples, and setup steps.
 
+   ![Screenshot (33)](https://github.com/user-attachments/assets/64644b58-8992-4374-98a2-9e07cbb03c19)
+
+
 ### Summary
 
 You have successfully cloned the GitHub repository, set it up in your `Dev-Sec` project folder, and opened it in Visual Studio Code for editing. The repository structure is now in place and ready for the next steps in configuring, testing, or extending this DevSecOps project. 
