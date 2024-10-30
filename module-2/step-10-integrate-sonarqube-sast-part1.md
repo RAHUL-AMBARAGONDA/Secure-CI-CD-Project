@@ -39,6 +39,9 @@
        └── workflows
    ```
 
+![Screenshot (38)](https://github.com/user-attachments/assets/6c9d2419-5c9e-45ec-a156-848704216047)
+
+
 #### **4. Create the `gitops.yaml` File for Workflow Configuration**
 
 1. Inside the `workflows` folder, create a new file named `gitops.yaml`.
