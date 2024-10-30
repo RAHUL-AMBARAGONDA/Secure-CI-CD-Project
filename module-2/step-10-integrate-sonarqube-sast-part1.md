@@ -49,6 +49,8 @@
 
 ---
 
+![Screenshot (38)](https://github.com/user-attachments/assets/ea8f8869-5c82-4d3c-b2fc-182b188b724a)
+
 ### Summary
 
 With these four foundational steps, you’ve set up the structure to implement a GitHub Actions workflow using `gitops.yaml`. The next steps would involve configuring this file to run security scans and ensure continuous integration of SAST into your DevSecOps pipeline.
