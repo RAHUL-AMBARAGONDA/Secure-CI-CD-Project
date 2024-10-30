@@ -231,23 +231,23 @@ The `docker-compose.yml` file will define the configuration for both SonarQube a
    ```
 
    **Explanation of Configuration**:
-   - **Services**:
-     - `sonarqube`: Specifies SonarQube as a service using the community edition image. It restarts automatically unless explicitly stopped. It also depends on the `db` service.
-       - **Environment Variables**:
-         - `SONAR_JDBC_URL`: Connection string to the PostgreSQL database.
-         - `SONAR_JDBC_USERNAME` and `SONAR_JDBC_PASSWORD`: Credentials for SonarQube to access the PostgreSQL database.
-       - **Volumes**: Directories within the SonarQube container are mapped to Docker volumes for persistence.
-       - **Ports**: Exposes port `9000` for accessing SonarQube.
-     - `db`: Specifies PostgreSQL as a service, required by SonarQube for data storage. It also restarts automatically unless stopped.
-       - **Environment Variables**:
-         - `POSTGRES_USER` and `POSTGRES_PASSWORD`: Defines the database user and password for SonarQube.
-       - **Volumes**: Configures Docker volumes to store database files persistently.
+ - **Services**:
+ - `sonarqube`: Specifies SonarQube as a service using the community edition image. It restarts automatically unless explicitly stopped. It also depends on the `db` service.
+- **Environment Variables**:
+- `SONAR_JDBC_URL`: Connection string to the PostgreSQL database.
+- `SONAR_JDBC_USERNAME` and `SONAR_JDBC_PASSWORD`: Credentials for SonarQube to access the PostgreSQL database.
+- **Volumes**: Directories within the SonarQube container are mapped to Docker volumes for persistence.
+- **Ports**: Exposes port `9000` for accessing SonarQube.
+- `db`: Specifies PostgreSQL as a service, required by SonarQube for data storage. It also restarts automatically unless stopped.
+- **Environment Variables**:
+- `POSTGRES_USER` and `POSTGRES_PASSWORD`: Defines the database user and password for SonarQube.
+- **Volumes**: Configures Docker volumes to store database files persistently.
 
-   - **Volumes**:
-     - Defines Docker volumes for data persistence.
+- **Volumes**:
+- Defines Docker volumes for data persistence.
 
 3. **Save and Exit**:
-   - In `vi`, press `Esc`, then type `:wq` and press `Enter` to save and close.
+- In `vi`, press `Esc`, then type `:wq` and press `Enter` to save and close.
 
 ---
 
