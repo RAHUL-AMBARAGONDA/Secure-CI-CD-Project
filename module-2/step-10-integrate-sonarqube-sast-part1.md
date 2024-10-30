@@ -25,6 +25,9 @@
    └── .github
    ```
 
+![Screenshot (37)](https://github.com/user-attachments/assets/2449e4d7-83a2-4398-840d-fda4d44192ea)
+
+
 #### **3. Create the `workflows` Folder**
 
 1. Inside the `.github` folder, create another new folder.
