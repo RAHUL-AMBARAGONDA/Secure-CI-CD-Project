@@ -103,11 +103,15 @@ Pipeline Architecture
 [**Step 7.** Implement Quality Gates for SAST](module-2/step-14-implement-quality-gates.md)
 
 ## Module 3: Dockerization of Mario Game Project
-1. [Hands-On: Create a DockerHub Account and DockerHub Repository](#hands-on-create-a-dockerhub-account-and-dockerhub-repository)
-2. [Hands-On: Write a Dockerfile for Mario Game Project](#hands-on-write-a-dockerfile-for-mario-game-project)
-3. [Hands-On: Part 1 - Build and Push Mario Docker Image to DockerHub Repo](#hands-on-part-1---build-and-push-mario-docker-image-to-dockerhub-repo)
-4. [Hands-On: Part 2 - Build and Push Mario Docker Image to DockerHub Repo](#hands-on-part-2---build-and-push-mario-docker-image-to-dockerhub-repo)
-5. [Hands-On: Implement Dynamic Tagging for Mario Docker Image](#hands-on-implement-dynamic-tagging-for-mario-docker-image)
+1. [**step 1:** Create a DockerHub Account and DockerHub Repository](#hands-on-create-a-dockerhub-account-and-dockerhub-repository)
+2. 
+3. [**step 2:** Write a Dockerfile for Mario Game Project](#hands-on-write-a-dockerfile-for-mario-game-project)
+4. 
+5. [**step 3:** Part 1 - Build and Push Mario Docker Image to DockerHub Repo](#hands-on-part-1---build-and-push-mario-docker-image-to-dockerhub-repo)
+6. 
+7. [**step 4**: Part 2 - Build and Push Mario Docker Image to DockerHub Repo](#hands-on-part-2---build-and-push-mario-docker-image-to-dockerhub-repo)
+8. 
+9. [**step 5**: Implement Dynamic Tagging for Mario Docker Image](#hands-on-implement-dynamic-tagging-for-mario-docker-image)
 
 
 
