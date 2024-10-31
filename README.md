@@ -102,6 +102,13 @@ Pipeline Architecture
 
 [**Step 7.** Implement Quality Gates for SAST](module-2/step-14-implement-quality-gates.md)
 
+## Module 3: Dockerization of Mario Game Project
+1. [Hands-On: Create a DockerHub Account and DockerHub Repository](#hands-on-create-a-dockerhub-account-and-dockerhub-repository)
+2. [Hands-On: Write a Dockerfile for Mario Game Project](#hands-on-write-a-dockerfile-for-mario-game-project)
+3. [Hands-On: Part 1 - Build and Push Mario Docker Image to DockerHub Repo](#hands-on-part-1---build-and-push-mario-docker-image-to-dockerhub-repo)
+4. [Hands-On: Part 2 - Build and Push Mario Docker Image to DockerHub Repo](#hands-on-part-2---build-and-push-mario-docker-image-to-dockerhub-repo)
+5. [Hands-On: Implement Dynamic Tagging for Mario Docker Image](#hands-on-implement-dynamic-tagging-for-mario-docker-image)
+
 
 
 
