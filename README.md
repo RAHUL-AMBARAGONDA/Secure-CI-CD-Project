@@ -107,13 +107,13 @@ Pipeline Architecture
 
 [**Step 1.** Create a DockerHub Account and DockerHub Repository](Module 3: Dockerization of Mario Game Project/Step 1. Create a DockerHub Account and DockerHub Repository.md)
 
-[**Step 2.** Write a Dockerfile for Mario Game Project](module-3/step-2-write-dockerfile.md)
+[**Step 2.** Write a Dockerfile for Mario Game Project](Module 3: Dockerization of Mario Game Project/step-2-write-dockerfile.md)
 
-[**Step 3.** Build and Push Mario Docker Image to DockerHub Repo - Part 1](module-3/step-3-build-push-mario-docker-image-part1.md)
+[**Step 3.** Build and Push Mario Docker Image to DockerHub Repo - Part 1](Module 3: Dockerization of Mario Game Project/step-3-build-push-mario-docker-image-part1.md)
 
-[**Step 4.** Build and Push Mario Docker Image to DockerHub Repo - Part 2](module-3/step-4-build-push-mario-docker-image-part2.md)
+[**Step 4.** Build and Push Mario Docker Image to DockerHub Repo - Part 2](Module 3: Dockerization of Mario Game Project/step-4-build-push-mario-docker-image-part2.md)
 
-[**Step 5.** Implement Dynamic Tagging for Mario Docker Image](module-3/step-5-implement-dynamic-tagging.md)
+[**Step 5.** Implement Dynamic Tagging for Mario Docker Image](Module 3: Dockerization of Mario Game Project/step-5-implement-dynamic-tagging.md)
 
 
 
