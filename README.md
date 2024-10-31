@@ -105,15 +105,17 @@ Pipeline Architecture
 
 
 
-## Module 3: Dockerization of Mario Game Project
+## Module 3: Dockerization of Mario Game Project## Module 3: Dockerization of Mario Game Project
 
-- [Step 1. Create a DockerHub Account and DockerHub Repository](Module%203:%20Dockerization%20of%20Mario%20Game%20Project/Step%201.%20Create%20a%20DockerHub%20Account%20and%20DockerHub%20Repository.md)
-- [Step 2. Write a Dockerfile for Mario Game Project](Module%203:%20Dockerization%20of%20Mario%20Game%20Project/step-2-write-dockerfile.md)
-- [Step 3. Build and Push Mario Docker Image to DockerHub Repo - Part 1](Module%203:%20Dockerization%20of%20Mario%20Game%20Project/step-3-build-push-mario-docker-image-part1.md)
-- [Step 4. Build and Push Mario Docker Image to DockerHub Repo - Part 2](Module%203:%20Dockerization%20of%20Mario%20Game%20Project/step-4-build-push-mario-docker-image-part2.md)
-- [Step 5. Implement Dynamic Tagging for Mario Docker Image](Module%203:%20Dockerization%20of%20Mario%20Game%20Project/step-5-implement-dynamic-tagging.md)
+[**Step 1.** Create a DockerHub Account and DockerHub Repository](module-3/step-1-create-dockerhub-account.md)
 
+[**Step 2.** Write a Dockerfile for Mario Game Project](module-3/step-2-write-dockerfile.md)
 
+[**Step 3.** Build and Push Mario Docker Image to DockerHub Repo - Part 1](module-3/step-3-build-push-mario-docker-image-part1.md)
+
+[**Step 4.** Build and Push Mario Docker Image to DockerHub Repo - Part 2](module-3/step-4-build-push-mario-docker-image-part2.md)
+
+[**Step 5.** Implement Dynamic Tagging for Mario Docker Image](module-3/step-5-implement-dynamic-tagging.md)
 
 
 
