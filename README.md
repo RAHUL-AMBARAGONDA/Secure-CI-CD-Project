@@ -105,7 +105,7 @@ Pipeline Architecture
 
 ## Module 3: Dockerization of Mario Game Project
 
-[**Step 1.** Create a DockerHub Account and DockerHub Repository](module-3/step-1-create-dockerhub-account.md)
+[**Step 1.** Create a DockerHub Account and DockerHub Repository](Module 3: Dockerization of Mario Game Project/Step 1. Create a DockerHub Account and DockerHub Repository.md)
 
 [**Step 2.** Write a Dockerfile for Mario Game Project](module-3/step-2-write-dockerfile.md)
 
