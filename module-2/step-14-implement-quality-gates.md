@@ -10,6 +10,9 @@
 
 3. **Create a New Quality Gate**:
    - Click on the **Create** button.
+  
+   - ![Screenshot (57)](https://github.com/user-attachments/assets/0300e072-8319-48f6-b4df-278b183ea490)
+
    - Enter the name for the new quality gate, for example, `customsupermario`.
    - Click on **Create** to save your new quality gate.
 
