@@ -29,6 +29,9 @@
     
    - Select **Coverage** from the dropdown list.
    - Set the condition to **< 90%**. This means that if the line coverage is below 90%, the quality gate will fail.
+  
+  ![Screenshot (60)](https://github.com/user-attachments/assets/6820aef3-d9a1-4e91-a399-3d706aedd2c6)
+
 
 3. **Set as Default**:
    - After adding the condition, click the **Set as Default** button to make this quality gate the default for your projects.
