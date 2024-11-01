@@ -94,6 +94,9 @@
 
 3. **Confirm Quality Gate Status**:
    - Look for a message indicating that the quality gate has failed. This confirms that your quality gate is functioning correctly.
+  
+     ![Screenshot (64)](https://github.com/user-attachments/assets/d0bd9fc1-5728-4058-a81f-aae5667d0681)
+
 
 ### Summary
 
