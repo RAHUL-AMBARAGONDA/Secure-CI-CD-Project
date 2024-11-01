@@ -38,7 +38,7 @@ This repository contains the Dockerized version of the Mario application. This l
    # Use an official Tomcat image as a base image
    FROM tomcat:9.0.14-jre8-alpine
 
-   LABEL maintainer="github.com/asecurityguru"
+   LABEL maintainer="github.com/rahuldocker628"
 
    # Copy your web application to the Tomcat webapps directory
    COPY webapp/ /usr/local/tomcat/webapps/ROOT/
