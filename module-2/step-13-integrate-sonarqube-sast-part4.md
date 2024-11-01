@@ -25,22 +25,22 @@
    drwxr-xr-x 6 root root 4096 Oct 31 10:28 .
    drwxr-xr-x 4 root root 4096 Oct 31 10:28 ..
    drwxr-xr-x 7 root root 4096 Oct 31 10:28 .git
-   drwxr-xr-x 3 root root 4096 Oct 31 10:28 .github
    -rw-r--r-- 1 root root  168 Oct 30 11:21 README.md
    drwxr-xr-x 2 root root 4096 Oct 31 10:28 demo
-   -rw-r--r-- 1 root root   42 Oct 30 13:06 sonar-project.properties
    drwxr-xr-x 6 root root 4096 Oct 31 10:28 webapp
    ```
 
 ### Step 2: Stage and Commit the `gitops.yaml` File in Visual Studio
 
-Since you've already created the `gitops.yaml` file in Visual Studio, follow these steps to stage and commit it:
+Since you've already created the `gitops.yaml` and sonar-project.properties file in Visual Studio, follow these steps to stage and commit it:
 
 1. **Stage the Changes**:
    ```bash
-   git add .github/workflows/gitops.yaml
+   git add .github/workflows/gitops.yaml 
    ```
-
+ ```bash
+   git add sonar-project.properties 
+   ```
 2. **Commit the Changes**:
    ```bash
    git commit -m "Add GitHub Actions workflow for SonarQube SAST scan"
