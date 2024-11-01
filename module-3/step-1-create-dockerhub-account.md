@@ -43,12 +43,18 @@ Docker Hub is a cloud-based registry service that allows you to link code reposi
 
 1. After logging in, click on your username in the top right corner to open the dropdown menu.
 2. Select **Repositories** from the menu.
+ 
+  ![Screenshot (69)](https://github.com/user-attachments/assets/4b3c288e-21d1-4cbf-83d3-c295df0e372a)
+
+
 
 ### Step 2: Create a New Repository
 
 1. Click on the **Create Repository** button.
 2. Fill in the required fields:
-   - **Repository Name**: Choose a name for your repository (e.g., `mario-app`).
+   - **Repository Name**: Choose a name for your repository ( `mariogitopsproject).
    - **Description** (optional): Add a brief description of the repository.
    - **Visibility**: Choose between **Public** or **Private** based on your preference.
 3. Click the **Create** button to create your repository.
+
+   ![Screenshot (70)](https://github.com/user-attachments/assets/0071b3b4-fb3b-46b7-9936-d0f093e80929)
