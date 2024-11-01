@@ -138,6 +138,9 @@ jobs:
 2. **View Project Analysis**:
    - Navigate to your project.
    - Review the results of the SAST analysis.
+  
+   - ![Screenshot (55)](https://github.com/user-attachments/assets/3b78ac3b-63c0-44c1-94ab-1b6197b20e51)
+
 
 ### Summary
 
