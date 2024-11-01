@@ -13,8 +13,12 @@
   
    - ![Screenshot (57)](https://github.com/user-attachments/assets/0300e072-8319-48f6-b4df-278b183ea490)
 
-   - Enter the name for the new quality gate, for example, `customsupermario`.
+   - Enter the name for the new quality gate,  `customsupermario`.
    - Click on **Create** to save your new quality gate.
+   - 
+   - Set it as default gate
+  
+   - ![Screenshot (61)](https://github.com/user-attachments/assets/9c3c7dc9-c860-4ea7-aeb1-b339be68979c)
 
 #### Step 2: Add Rules to the Quality Gate
 
