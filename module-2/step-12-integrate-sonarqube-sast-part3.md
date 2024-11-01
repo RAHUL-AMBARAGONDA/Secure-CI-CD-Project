@@ -64,6 +64,7 @@
    - Name it `SONAR_TOKEN` and paste the token from Step 7.
    - Click **Add secret**.
 
+![Screenshot (50)](https://github.com/user-attachments/assets/b769566c-b668-447e-8967-ddb6d6ad7a75)
 ---
 
 This configuration enables SonarQube SAST scanning on the `gitopsdevsecopspipeline` project using minimal setup and repository secrets in GitHub.
