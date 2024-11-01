@@ -82,6 +82,9 @@
 3. **Monitor the Workflow Status**:
    - Click on the running job to view the logs.
    - Check for any failures related to the quality gate.
+  
+   - ![Screenshot (62)](https://github.com/user-attachments/assets/e2aa3843-6e54-4b3e-a98f-b8d594732aa2)
+
 
 #### Step 6: Review Results in SonarQube
 
