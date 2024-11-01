@@ -24,6 +24,9 @@
 
 2. **Add Conditions**:
    - Click on **Add Condition** to define rules for the quality gate.
+  
+   - ![Screenshot (59)](https://github.com/user-attachments/assets/29a990c3-830a-4540-919f-0873fc64d62c)
+    
    - Select **Coverage** from the dropdown list.
    - Set the condition to **< 90%**. This means that if the line coverage is below 90%, the quality gate will fail.
 
