@@ -51,6 +51,8 @@
 
 2. **Go to Settings**:
    - Select **Settings** from the main page.
+  
+   - ![Screenshot (48)](https://github.com/user-attachments/assets/b041d9e3-a18c-41f3-8706-cee77314bdc2)
 
 3. **Add the SONAR_HOST_URL Secret**:
    - Under **Settings**, navigate to **Secrets and variables** > **Actions** > **New repository secret**.
