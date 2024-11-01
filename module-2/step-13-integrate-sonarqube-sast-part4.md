@@ -58,7 +58,8 @@
    ```
 
 3. **Add the Following Content**:
-4. name: "Run SAST Scan on SuperMario Game Project"
+
+    name: "Run SAST Scan on SuperMario Game Project"
 
 on:
   push:
