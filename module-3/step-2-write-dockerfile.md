@@ -16,7 +16,7 @@ This repository contains the Dockerized version of the Mario application. This l
 
 1. **Open Visual Studio**: Start Visual Studio and create a new project or open an existing one.
 2. **Create a Dockerfile**:
-   - Under the **root folder** of your project (where you created your previous files), create a new Dockerfile named `Dockerfile`. Visual Studio recognizes it automatically.
+   - Under the **root folder** of your project (where you created your previous files which is Dev-Sec/gitops-practice-devsecops-sonarqube-sast-scan-supermario-repo), create a new Dockerfile named `Dockerfile`. Visual Studio recognizes it automatically.
    - Navigate to the specific file location in the file explorer and open the file from the terminal.
 
    Your file structure should look like this:
