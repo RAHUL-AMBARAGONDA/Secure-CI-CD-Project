@@ -58,47 +58,38 @@
    ```
 
 3. **Add the Following Content**:
-   ```yaml
-   name: SonarQube Scan
+4. name: "Run SAST Scan on SuperMario Game Project"
 
-   on:
-     push:
-       branches:
-         - main # Change to your default branch
+on:
+  push:
+    branches:
+      - main
+  
+jobs:
 
-   jobs:
-     sonar:
-       name: SonarQube Scan
-       runs-on: ubuntu-latest
+  sonarqube_sast_scan:
+    runs-on: ubuntu-latest
 
-       steps:
-         - name: Checkout code
-           uses: actions/checkout@v2
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for better analysis relevance
 
-         - name: Set up JDK
-           uses: actions/setup-java@v1
-           with:
-             java-version: '11' # Change to your project’s Java version
-
-         - name: Cache SonarQube scanner
-           uses: actions/cache@v2
-           with:
-             path: ~/.sonar/cache
-             key: ${{ runner.os }}-sonar-${{ hashFiles('**/sonar-project.properties') }}
-
-         - name: Run SonarQube Scan
-           env:
-             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }} # Use a GitHub secret for your token
-           run: |
-             echo "sonar.projectKey=your_project_key" >> sonar-project.properties
-             echo "sonar.host.url=http://<your-azure-vm-ip>:9000" >> sonar-project.properties
-             echo "sonar.login=${{ secrets.SONAR_TOKEN }}" >> sonar-project.properties
-             echo "sonar.sources=src" >> sonar-project.properties
-             echo "sonar.tests=tests" >> sonar-project.properties
-             sonar-scanner
-   ```
-
-4. **Save and Exit**:
+      - name: SonarQube Scan
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      # If you wish to fail your job when the Quality Gate is red, uncomment the
+      # following lines. This would typically be used to fail a deployment.
+      - name: SonarQube Quality Gate Check
+        uses: sonarsource/sonarqube-quality-gate-action@master
+        timeout-minutes: 5
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+  
+5. **Save and Exit**:
    If using `nano`, press `CTRL + X`, then `Y`, and `ENTER` to save.
 
 #### Step 4: Add SonarQube Token to GitHub Secrets
