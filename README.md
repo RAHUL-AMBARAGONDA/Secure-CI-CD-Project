@@ -125,9 +125,10 @@ Pipeline Architecture
 
 ### Module 5: Deploy Mario Docker Game on Azure Kubernetes Cluster
 
- [**Step 1:.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 1](Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-1.md)
+ [**Step 1:.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 1](module-5/Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-1.md)
  
- [**Step 2.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 2](Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-2.md)
+ [**Step 2.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 2](module-5/Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-2.md}
+ 
  
 
 
