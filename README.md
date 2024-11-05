@@ -119,15 +119,16 @@ Pipeline Architecture
 
 ### Module 4: Implement Container Scan for Mario Game
 
- [**Step 1:** Implement Container Scan for Mario Game - Part 1](module-4/step-1-Implement-conatiner-scan.md)
+ [**Step 1.** Implement Container Scan for Mario Game - Part 1](module-4/step-1-Implement-conatiner-scan.md)
 
- [**Step 2:** Implement Container Scan for Mario Game - Part 2](module-4/step-2-Implement-container-scan-part-2.md)
+ [**Step 2.** Implement Container Scan for Mario Game - Part 2](module-4/step-2-Implement-container-scan-part-2.md)
 
 ### Module 5: Deploy Mario Docker Game on Azure Kubernetes Cluster
 
- [**Step 1:** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 1]
+ [**Step 1:.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 1](Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-1.md)
  
- [**Step 2:** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 2]
+ [**Step 2.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 2](Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-2.md)
+ 
 
 
 
