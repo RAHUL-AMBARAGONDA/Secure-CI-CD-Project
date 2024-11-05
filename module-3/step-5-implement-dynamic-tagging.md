@@ -1,6 +1,3 @@
-Here’s how you can present **Step 5** in your README file format for GitHub:
-
-```markdown
 # Step 5: Build and Push Super Mario Game Docker Image with Dynamic Tag
 
 ## Goal of this step:
