@@ -20,9 +20,9 @@ This guide provides instructions for setting up a GitOps workflow to build and p
 4. **Modify the `gitops-sast-sonar.yaml` file** by updating the `on` section:
    - Change the `on` section to:
      ```yaml
-    .# on:
-    .#   push:
-    . #    branches:
+     # on:
+     #   push:
+     #    branches:
            - main
      ```
    - This change specifies that the workflow should trigger on pushes to the `main` branch.
