@@ -1,4 +1,3 @@
-```markdown
 # Continuing the GitOps Workflow Setup for Super Mario Docker Image
 
 Following up on the previous steps, here’s how to create Docker Hub secrets and push the code to your GitHub repository. Once completed, you should be able to see the workflow running successfully in GitHub Actions and verify the Docker image in your Docker Hub repository.
