@@ -115,7 +115,7 @@ Pipeline Architecture
 
 [**Step 4.** Build and Push Mario Docker Image to DockerHub Repo - Part 2](module-3/step-4-build-push-mario-docker-image-part2.md)
 
-[**Step 5.** Implement Dynamic Tagging for Mario Docker Image](module-3/step-5-implement-dynamic-tagging.md
+[**Step 5.** Implement Dynamic Tagging for Mario Docker Image](module-3/step-5-implement-dynamic-tagging.md)
 
 ### Module 4: Implement Container Scan for Mario Game
 
