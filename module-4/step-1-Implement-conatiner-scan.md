@@ -1,6 +1,3 @@
-To maintain consistency, here’s how you can document this step to include using Visual Studio Code to create the YAML file under the `.github/workflows` directory:
-
-```markdown
 # Step 6: Pull and Scan Super Mario Docker Image for Vulnerabilities
 
 ## Goal of this Step:
