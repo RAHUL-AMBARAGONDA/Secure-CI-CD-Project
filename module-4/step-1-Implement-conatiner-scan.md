@@ -64,7 +64,7 @@ jobs:
         run: |
           grype docker-archive://$(pwd)/supermariolatestdockerimage.tar --fail-on critical
 
-   ```
+  
 
 
 ###**Explanation of the Code:**
