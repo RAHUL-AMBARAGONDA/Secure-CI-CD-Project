@@ -20,7 +20,7 @@
 
 2. **Create a New Project in ArgoCD:**
 
-![Screenshot (79)](https://github.com/user-attachments/assets/f26d6337-8ca5-4968-a071-71eff76b6c39)
+
 
    - In the ArgoCD UI, click on the **"Projects"** tab on the left sidebar.
    - Click the **"New Project"** button to create a new project.
@@ -29,6 +29,8 @@
    - Click **Create**.
 
 3. **Create an Application in ArgoCD:**
+
+![Screenshot (79)](https://github.com/user-attachments/assets/f26d6337-8ca5-4968-a071-71eff76b6c39)
 
    - Once the project is created, click on the **"Applications"** tab.
    - Click **"New App"** to create an application.
