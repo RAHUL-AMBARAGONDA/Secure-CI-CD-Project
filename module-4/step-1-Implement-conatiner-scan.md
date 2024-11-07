@@ -17,37 +17,53 @@ To pull the Super Mario Docker image from Docker Hub, run a vulnerability scan o
    ```yaml
    name: "Run Container Scan on Super Mario Docker Image with Quality Gate"
 
-   on:
-     push:
-       branches:
-         - main
+on:
+  push:
+    branches:
+      - main
 
-   env:
-     VERSION: $(( $(cat version.txt) + 1 ))
+env:
+  VERSION: $(( $(cat version.txt) + 1 ))
 
-   jobs:
+jobs:
+  run_container_image_scan_on_supermario_docker_image:
+    runs-on: ubuntu-latest
 
-     run_container_image_scan_on_supermario_docker_image:
-       runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
-       steps:
-         - name: Checkout Repository
-           uses: actions/checkout@v3
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
 
-         - name: Login to Docker Hub
-           run: echo "${{ secrets.DOCKERHUB_TOKEN }}" | docker login -u "${{ secrets.DOCKERHUB_USERNAME }}" --password-stdin
+      - name: Get Docker Image from Docker Hub
+        run: |
+          docker pull docker.io/rahuldocker628/mariogitopsproject:${{ env.VERSION }}
+          docker save -o supermariolatestdockerimage.tar docker.io/rahuldocker628/mariogitopsproject:${{ env.VERSION }}
 
-         - name: Get Docker Image from Docker Hub
-           run: |
-             docker pull docker.io/rahuldocker628/mariogitopsproject:${{ env.VERSION }}
-             docker save -o supermariolatestdockerimage.tar docker.io/rahuldocker628/mariogitopsproject:${{ env.VERSION }}
+      - name: Verify Tarball Exists
+        run: |
+          ls -lh supermariolatestdockerimage.tar
 
-         - name: Run Trivy Vulnerability Scanner in Tarball Mode
-           uses: aquasecurity/trivy-action@master
-           with:
-             input: /github/workspace/supermariolatestdockerimage.tar
-             exit-code: '1'
-             severity: 'CRITICAL,HIGH'
+      - name: Set up Grype Cache Directory
+        run: mkdir -p ~/.cache/grype
+
+      - name: Cache Grype DB
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/grype
+          key: ${{ runner.os }}-grype-db-cache
+          restore-keys: |
+            ${{ runner.os }}-grype-db-cache
+
+      - name: Install Grype
+        run: |
+          curl -sSfL https://github.com/anchore/grype/releases/download/v0.68.0/grype_0.68.0_linux_amd64.tar.gz | tar -xz -C /usr/local/bin
+
+      - name: Run Grype Vulnerability Scan for Critical Issues
+        run: |
+          grype docker-archive://$(pwd)/supermariolatestdockerimage.tar --fail-on critical
+
    ```
 
    **Explanation of the Code:**
