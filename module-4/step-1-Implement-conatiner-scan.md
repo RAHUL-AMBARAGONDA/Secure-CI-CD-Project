@@ -88,9 +88,8 @@ Upload Grype Report: The scan report is optionally uploaded to the GitHub Action
    git push origin main
    ```
 
----
 
 Once pushed to GitHub, this workflow will automatically trigger on every push to the `main` branch. It will pull the latest version of the Super Mario Docker image, scan it for vulnerabilities using Trivy, and fail the build if critical or high vulnerabilities are found. This step is crucial for maintaining security in your CI/CD pipeline.
-```
+
 
 This ensures that the instructions are clear, consistent with previous steps, and easy to follow. Let me know if any further adjustments are needed!
