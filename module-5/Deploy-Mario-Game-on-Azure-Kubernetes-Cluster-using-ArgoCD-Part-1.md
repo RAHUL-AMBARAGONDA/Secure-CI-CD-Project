@@ -49,6 +49,8 @@
    - **Repository URL:** `https://github.com/RAHUL-AMBARAGONDA/gitops-practice-devsecops-sonarqube-sast-scan-supermario-repo.git`
    - **Revision:** `HEAD` (which will use the latest commit from the default branch).
    - **Path:** `/` (this indicates that the Kubernetes manifests are at the root of the Git repository).
+
+  ![Screenshot (80)](https://github.com/user-attachments/assets/9bdcc493-982a-4d5c-af6d-e2e4c4bcab40)
    
    **Destination Section:**
    - **Cluster URL:** `https://kubernetes.default.svc` (for the Kubernetes cluster within the current AKS cluster).
