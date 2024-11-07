@@ -67,8 +67,14 @@ jobs:
    ```
 
    **Explanation of the Code:**
-   - **Docker Pull and Save**: This pulls the Docker image from Docker Hub using the version specified in `version.txt` and saves it as `supermariolatestdockerimage.tar`.
-   - **Vulnerability Scan**: Trivy scans the tarball for vulnerabilities, specifically looking for any critical or high severity issues. If vulnerabilities at these levels are detected, the build fails, thanks to `exit-code: '1'`.
+   
+Checkout the Repository: We start by checking out the code from the repository.
+Set up Docker: This sets up Docker to run commands for image pulling and scanning.
+Install Grype: This installs the Grype tool using a script from the Grype GitHub repository.
+Pull the Docker Image: This pulls the Docker image (rahuldocker628/mariogitopsproject:latest) from Docker Hub.
+Save Docker Image as Tarball: The Docker image is saved as a tarball for scanning with Grype.
+Run Grype Scan: The grype command scans the Docker image tarball and fails the job if critical vulnerabilities are found (--fail-on critical).
+Upload Grype Report: The scan report is optionally uploaded to the GitHub Actions artifacts for further review.
 
 ### Step 2: Save and Push to GitHub
 
