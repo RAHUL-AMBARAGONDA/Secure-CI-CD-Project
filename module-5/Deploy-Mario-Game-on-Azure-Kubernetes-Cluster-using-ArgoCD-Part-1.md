@@ -70,6 +70,8 @@ Once the application is created in ArgoCD, it will show up on the **Applications
 
 Once ArgoCD pulls the manifest and deploys the Mario game, it will show the **Sync Status** as **Synced**, indicating the deployment was successful.
 
+![Screenshot (82)](https://github.com/user-attachments/assets/272d0bdf-1f37-4842-bfc0-1b14f22884ad)
+
 ---
 
 ### **Conclusion:**
