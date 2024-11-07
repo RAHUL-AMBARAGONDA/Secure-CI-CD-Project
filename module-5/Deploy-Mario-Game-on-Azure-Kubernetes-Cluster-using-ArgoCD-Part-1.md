@@ -66,4 +66,4 @@ With these steps, you have deployed the Super Mario game Docker image onto your 
 
 If you want to see changes in real-time, any update in the repository will trigger the auto-sync feature, automatically updating the deployed Mario game in your AKS cluster.
 
-Let me know if you need further help!
+
