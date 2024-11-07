@@ -1,6 +1,4 @@
-Here's how you can perform **Part 1 - Deploy Mario Game on Azure Kubernetes Service using ArgoCD**, which demonstrates the **GitOps pull-based deployment** mechanism. Follow these steps:
 
----
 
 ### **Goal**: Deploy the Super Mario Docker image to Azure Kubernetes Service (AKS) using ArgoCD.
 
