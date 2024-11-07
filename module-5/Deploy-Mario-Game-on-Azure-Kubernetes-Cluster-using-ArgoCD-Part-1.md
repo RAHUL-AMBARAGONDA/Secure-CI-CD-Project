@@ -30,12 +30,13 @@
 
 3. **Create an Application in ArgoCD:**
 
-![Screenshot (79)](https://github.com/user-attachments/assets/f26d6337-8ca5-4968-a071-71eff76b6c39)
 
    - Once the project is created, click on the **"Applications"** tab.
    - Click **"New App"** to create an application.
    
    Here's how to fill in the required fields:
+
+   ![Screenshot (79)](https://github.com/user-attachments/assets/f26d6337-8ca5-4968-a071-71eff76b6c39)
    
    - **Application Name:** `supermariogame`
    - **Project:** `default` (as the project we created earlier is in the default group).
