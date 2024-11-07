@@ -15,6 +15,7 @@ To pull the Super Mario Docker image from Docker Hub, run a vulnerability scan o
 3. Copy the following code into `run-container-scan-supermario-image.yaml`:
 
    ```yaml
+   
    name: "Run Container Scan on Super Mario Docker Image with Quality Gate"
 
 on:
