@@ -66,7 +66,8 @@ jobs:
 
    ```
 
-   **Explanation of the Code:**
+
+###**Explanation of the Code:**
    
 Checkout the Repository: We start by checking out the code from the repository.
 Set up Docker: This sets up Docker to run commands for image pulling and scanning.
