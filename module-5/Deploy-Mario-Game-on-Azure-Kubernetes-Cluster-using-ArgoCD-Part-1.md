@@ -58,6 +58,8 @@
 
    - After filling out the above fields, click **Create**.
 
+ ![Screenshot (81)](https://github.com/user-attachments/assets/915dae6d-fa14-489f-b5f5-ec67ce49e911)
+
 #### **Step 2: Sync the Application**
 
 Once the application is created in ArgoCD, it will show up on the **Applications** dashboard:
