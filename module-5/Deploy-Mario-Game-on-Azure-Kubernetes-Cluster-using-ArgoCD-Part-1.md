@@ -36,12 +36,15 @@
    
    Here's how to fill in the required fields:
 
-   ![Screenshot (79)](https://github.com/user-attachments/assets/f26d6337-8ca5-4968-a071-71eff76b6c39)
+   
    
    - **Application Name:** `supermariogame`
    - **Project:** `default` (as the project we created earlier is in the default group).
    - **Sync Policy:** Choose **Automatic** to enable auto-sync for continuous deployment.
-   
+
+   ![Screenshot (79)](https://github.com/user-attachments/assets/f26d6337-8ca5-4968-a071-71eff76b6c39)
+
+
    **Source Section:**
    - **Repository URL:** `https://github.com/RAHUL-AMBARAGONDA/gitops-practice-devsecops-sonarqube-sast-scan-supermario-repo.git`
    - **Revision:** `HEAD` (which will use the latest commit from the default branch).
