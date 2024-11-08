@@ -86,6 +86,9 @@
 
 4. Under the **EXTERNAL-IP** column, you should find the **LoadBalancer** IP address. This IP will be used to access the game.
 
+   ![Screenshot (83)](https://github.com/user-attachments/assets/41753acf-f78c-41d9-8f99-68cdf9c4dd12)
+
+
 ---
 
 #### **Step 5: Open the Mario Game in the Browser**
