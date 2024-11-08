@@ -34,6 +34,14 @@
 
 To get started with this project, ensure that the following prerequisites are met:
 
+Clone the Repository
+To get started with this project, clone the repository containing the Mario Game project from the forked repository:
+
+bash
+Copy code
+git clone https://github.com/[your-github-username]/[forked-repo-name].git
+
+Then, follow the step-by-step guide below to set up and deploy the project
 **Azure Account:** An active Azure account with a free or paid subscription. Sign up here for a free trial if needed.
 
 **Azure Kubernetes Service (AKS):** Knowledge of creating and managing Kubernetes clusters in Azure. Docker Hub Account: A Docker Hub account to store and manage container images.
