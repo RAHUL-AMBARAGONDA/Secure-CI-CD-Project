@@ -111,6 +111,9 @@
 
 4. After pressing **'Y'**, you will be able to play the game.
 
+   ![Screenshot (87)](https://github.com/user-attachments/assets/6bcfa36a-a8d8-43d9-a588-b3a220b6df59)
+
+
 ---
 
 #### **Step 6: Modifying the Game Behavior for Next Lab**
