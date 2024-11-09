@@ -1,14 +1,14 @@
-# **DevSecOps Pipeline for Super Mario Game: Real-Time Project Integration**
+# **DevSecOps Pipeline for Super Mario Game: Real-Time Project Integration**  ![DevSecOps](https://img.shields.io/badge/DevSecOps-Real--Time--Integration-blue?style=flat&logo=git)
 
-## **Introduction**
+## **Introduction**  ![Project Badge](https://img.shields.io/badge/Project-Super_Mario_Game-blue?style=flat&logo=docker)
 
 In this project, we demonstrate how a **DevSecOps pipeline** works in the context of a real-world application — the **Super Mario Game**. This pipeline integrates various **previous labs** and showcases how everything runs in a **real-time scenario** for a complete **enterprise application**. We've combined all the essential steps of the DevSecOps process, from secure code commits to automated deployments and monitoring.
 
-Our goal is to understand how real-time applications like Super Mario can benefit from modern DevSecOps practices, ensuring code quality, security, and smooth deployments in an automated manner.
+Our goal is to understand how real-time applications like Super Mario can benefit from modern **DevSecOps** practices, ensuring code quality, security, and smooth deployments in an automated manner.
 
 ---
 
-## **What We Achieved in Previous Labs**
+## **What We Achieved in Previous Labs**  ![Achievement Badge](https://img.shields.io/badge/Achievements-Completed-yellow)
 
 Throughout our previous labs, we worked on several key components that now come together in this **real-time project**:
 
@@ -28,33 +28,33 @@ Throughout our previous labs, we worked on several key components that now come 
 
 ---
 
-## **Real-Time DevSecOps Pipeline Workflow**
+## **Real-Time DevSecOps Pipeline Workflow**  ![Pipeline](https://img.shields.io/badge/Pipeline-Real--Time--Flow-brightgreen)
 
 The pipeline is designed to **automate** the following stages for every code change and deployment:
 
-### **1. Code Change & Trigger**
+### **1. Code Change & Trigger**  ![Code Change](https://img.shields.io/badge/Stage-Code_Change-orange)
    - When we make a **code change** (e.g., adjusting game controls), the pipeline is triggered automatically.
 
-### **2. Static Application Security Testing (SAST)**
+### **2. Static Application Security Testing (SAST)**  ![SonarQube](https://img.shields.io/badge/Tool-SonarQube-blueviolet)
    - **SonarQube** analyzes the code to identify any security vulnerabilities and code quality issues, ensuring that we are shipping secure and high-quality code.
 
-### **3. Docker Image Build & Push**
+### **3. Docker Image Build & Push**  ![Docker](https://img.shields.io/badge/Tool-Docker-blue?style=flat&logo=docker)
    - The pipeline builds a **Docker image** from the latest code changes.
    - The image is pushed to **Docker Hub**, tagged with the current version of the game.
 
-### **4. Container Image Vulnerability Scan**
+### **4. Container Image Vulnerability Scan**  ![Vulnerability Scan](https://img.shields.io/badge/Tool-Grype-green?style=flat&logo=docker)
    - After the Docker image is built, it undergoes a **vulnerability scan** using **Grype** to ensure there are no critical security issues in the image before deployment.
 
-### **5. Update Deployment Files**
+### **5. Update Deployment Files**  ![Kubernetes](https://img.shields.io/badge/Tool-Kubernetes-blue?style=flat&logo=kubernetes)
    - The **deployment YAML file** and **version.txt** are updated with the new Docker image tag and version, ensuring future deployments use the correct image.
 
-### **6. Continuous Deployment with ArgoCD**
+### **6. Continuous Deployment with ArgoCD**  ![ArgoCD](https://img.shields.io/badge/Tool-ArgoCD-lightgray?style=flat&logo=argo)
    - **ArgoCD** detects the updated image tag in the GitHub repository and automatically syncs the changes with the **Kubernetes cluster**.
    - This ensures the latest version of the game is running in the production environment.
 
 ---
 
-## **How It Works: Real-Time Integration of Previous Labs**
+## **How It Works: Real-Time Integration of Previous Labs**  ![Integration](https://img.shields.io/badge/Integration-Complete-success)
 
 In this project, we take the **learnings from all previous labs** and integrate them into a cohesive, **end-to-end DevSecOps pipeline** for the **Super Mario Game**:
 
@@ -72,7 +72,7 @@ In this project, we take the **learnings from all previous labs** and integrate 
 
 ---
 
-## **Real-Time Project Insights**
+## **Real-Time Project Insights**  ![Insights](https://img.shields.io/badge/Insights-Real--Time-green)
 
 ### **End-to-End Integration**
 
@@ -93,7 +93,7 @@ This project demonstrates how an application like **Super Mario Game** can go fr
 
 ---
 
-## **Conclusion**
+## **Conclusion**  ![Success](https://img.shields.io/badge/Status-Success-green)
 
 This project provides a **real-time demonstration** of how the **DevSecOps pipeline** works for an enterprise-grade application like the **Super Mario Game**. By integrating everything we’ve built in our previous labs, we’ve created a **robust and secure pipeline** that automates the entire process from code change to deployment, ensuring quality and security at every stage.
 
@@ -101,7 +101,7 @@ This pipeline not only saves time but also ensures that the game is always up-to
 
 ---
 
-## **Technologies Used**
+## **Technologies Used**  ![Technologies](https://img.shields.io/badge/Technologies-Used-blue?style=flat)
 - **GitHub Actions**: CI/CD workflows and automation.
 - **SonarQube**: Static Application Security Testing (SAST).
 - **Docker**: Containerization of the Super Mario Game.
