@@ -139,7 +139,7 @@ Pipeline Architecture
 
 ### Module 5: Implement End-to-End DevSecOps Pipeline for Mario Game
 
- [**Step 1**: Understanding End-to-End DevSecOps Pipeline for Mario Game]](module-5/ Understanding End-to-End DevSecOps Pipeline for Mario Game.md)
+ [**Step 1**: Understanding End-to-End DevSecOps Pipeline for Mario Game](module-5/Understanding End-to-End DevSecOps Pipeline for Mario Game.md)
  
  [**Step 2**: Hands-On: Part 1 - Implement End-to-End DevSecOps Pipeline for Mario Game]
  
