@@ -137,15 +137,8 @@ Pipeline Architecture
  
  [**Step 2.** Deploy Mario Game on Azure Kubernetes Cluster using ArgoCD - Part 2](module-5/Deploy-Mario-Game-on-Azure-Kubernetes-Cluster-using-ArgoCD-Part-2.md)
 
-### Module 5: Implement End-to-End DevSecOps Pipeline for Mario Game
 
- [**Step 1**: Understanding End-to-End DevSecOps Pipeline for Mario Game](module-5/Understanding End-to-End DevSecOps Pipeline for Mario Game.md)
- 
- [**Step 2**: Hands-On: Part 1 - Implement End-to-End DevSecOps Pipeline for Mario Game]
- 
- [**Step 3**: Hands-On: Part 2 - Implement End-to-End DevSecOps Pipeline for Mario Game]
-
- ### [Module 5: Implement End-to-End DevSecOps Pipeline for Mario Game](#module-5-implement-end-to-end-devsecops-pipeline-for-mario-game)
+### [Module 5: Implement End-to-End DevSecOps Pipeline for Mario Game](#module-5-implement-end-to-end-devsecops-pipeline-for-mario-game)
  
 - [Step 1: Understanding End-to-End DevSecOps Pipeline for Mario Game](#step-1-understanding-end-to-end-devsecops-pipeline-for-mario-game)
 - 
