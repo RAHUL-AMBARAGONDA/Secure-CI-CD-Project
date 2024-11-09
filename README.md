@@ -8,7 +8,7 @@
 
 
 
-1. [Introduction](#introduction)
+1. [Introduction](#project introduction)
 2. [Prerequisites](#prerequisites)
 3. [Project Overview](#project-overview)
 4. [Pipeline Architecture](#pipeline-architecture)
