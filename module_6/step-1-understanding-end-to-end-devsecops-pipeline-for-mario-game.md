@@ -1,6 +1,3 @@
-Got it! Here's the updated **README** with a focus on the **real-time project** and **integration with previous labs**:
-
-```markdown
 # **DevSecOps Pipeline for Super Mario Game: Real-Time Project Integration**
 
 ## **Introduction**
@@ -116,7 +113,3 @@ This pipeline not only saves time but also ensures that the game is always up-to
 ---
 
 By following this approach, we've demonstrated the power of **DevSecOps** and **GitOps** in the context of a real-time application, enabling us to deliver secure, automated, and efficient deployments for the **Super Mario Game**!
-
-```
-
-This README is designed to outline how the DevSecOps pipeline integrates various components we've worked on in previous labs, with a focus on running a real-time, enterprise-level application. It also emphasizes automation, security, and continuous deployment principles.
