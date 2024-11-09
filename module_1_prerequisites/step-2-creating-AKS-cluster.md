@@ -1,136 +1,105 @@
-# Step-by-Step Guide to Creating the Kubernetes Cluster in Azure
 
-## 1. Access the Kubernetes Cluster Creation Wizard in Azure
+# Kubernetes Cluster Creation on Azure 🚀
+
+A step-by-step guide to creating a Kubernetes cluster in Azure, optimized for **DevSecOps** and demo purposes.
+
+---
+
+## Table of Contents
+1. [Access Kubernetes Creation Wizard](#1-access-the-kubernetes-cluster-creation-wizard-in-azure)
+2. [Configure Basic Cluster Settings](#2-configure-basic-cluster-settings)
+3. [Set Up Node Pools](#3-configuring-node-pools-for-kubernetes-cluster)
+4. [Configure User Node Pool](#4-configuring-the-user-node-pool-in-kubernetes-cluster)
+5. [Set Up Networking](#5-configuring-networking-for-the-kubernetes-cluster)
+6. [Review & Deploy Cluster](#finalizing-cluster-configuration)
+
+---
+
+## 1. Access the Kubernetes Cluster Creation Wizard in Azure 🔑
 - **Log in** to your Azure portal at [portal.azure.com](https://portal.azure.com).
-- In the search bar at the top of the portal, type **Kubernetes services** and select it from the list of services.
-- Click on **+ Create** to start the Kubernetes cluster creation process.
+- In the search bar, type **Kubernetes services** and select it.
+- Click on **+ Create** to initiate the Kubernetes cluster setup.
 
 ---
 
-## 2. Configure Basic Cluster Settings
-Under the **Basics** tab:
+## 2. Configure Basic Cluster Settings ⚙️
+In the **Basics** tab:
 
-- **Subscription**: Select **Free Trial** to use Azure’s free resources.
-- **Resource Group**: Select or create `demo-resource-group`.
-- **Cluster Preset Configuration**: Choose **Dev/Test**. This preset is optimized for demonstration purposes and is cost-effective.
-- **Kubernetes Cluster Name**: Enter `demoKubernetesCluster`.
-- **Region**: Select **East US**.
-- **Availability Zones**: Set to **None** for this demo configuration.
-- **AKS Pricing Tier**: Select **Free** to keep the cluster within the free tier options.
-
----
-
-## 3. Configure Kubernetes Version and Upgrade Settings
-- **Kubernetes Version**: Select **1.27.7** (the default version available).
-- **Automatic Upgrade**: Set to **Disabled** to manually control version upgrades.
+- **Subscription**: Select **Free Trial**.
+- **Resource Group**: Choose or create `demo-resource-group`.
+- **Cluster Preset Configuration**: **Dev/Test** for demonstration purposes.
+- **Kubernetes Cluster Name**: `demoKubernetesCluster`.
+- **Region**: **East US**.
+- **Availability Zones**: Set to **None**.
+- **AKS Pricing Tier**: Choose **Free**.
 
 ---
 
-## 4. Set Authentication and Authorization Options
-- **Authentication Method**: Choose **Local Accounts** with Kubernetes RBAC to enable **Role-Based Access Control** for added security.
+## 3. Configure Kubernetes Version and Upgrade Settings 🛠️
+- **Kubernetes Version**: Choose **1.27.7** (or default version).
+- **Automatic Upgrade**: **Disabled** for manual control.
 
 ---
 
-## 5. Configure Node Security and Scheduling
-- **Node Security Channel Type**: Set **Node Image** as the security channel type.
-- **Scheduler Option**: Choose **No Schedule** to prevent unnecessary load on nodes reserved for security tasks.
+## 4. Set Authentication and Authorization Options 🔒
+- **Authentication Method**: Choose **Local Accounts** with **Kubernetes RBAC** for Role-Based Access Control.
 
 ---
 
-This configuration establishes the foundational setup for your Kubernetes cluster in Azure, ensuring a cost-effective environment with essential RBAC controls and custom version management, ideal for DevSecOps testing.
-
----
-
-## Step 3: Configuring Node Pools for Kubernetes Cluster
-
-In this step, we will configure the node pools for our Kubernetes cluster to define the resource allocation and scaling behavior for the nodes that make up the cluster.
+## 5. Configure Node Pools for Kubernetes Cluster 🖥️
 
 ### Understanding Node Pool Quotas and Limitations (Free Tier)
-- **Free Tier Quotas**: The Free Tier of Azure has a quota limit of 4 node pools with a total capacity of 4 vCPUs. This means:
-  - If you use two nodes, each can have 2 vCPUs.
-- This limit is ideal for lightweight applications or demos like this DevSecOps project.
-- **Note**: If you upgrade to a paid tier, these limitations can be lifted, allowing for additional CPU resources and node pools.
+- **Free Tier Quotas**: Limited to 4 node pools, with 4 vCPUs max (e.g., 2 vCPUs each for two nodes).
+- Suitable for lightweight applications or demos.
 
 ### Node Pool Configuration Steps
 
-#### 1. Delete the Default System Node Pool (Optional for Paid Tier)
-- Since the Free Tier has limited capacity, delete the default system node pool created by Azure.
-- This ensures that your cluster’s quota is optimized for the nodes you configure manually.
+#### Delete Default System Node Pool (Optional)
+> ⚠️ If using the Free Tier, delete the default system node pool to optimize capacity.
 
-#### 2. Add a New Node Pool (System Node)
-Configure the node pool settings for your system node:
+#### System Node Pool Setup
+- **Name**: `demosysnode`
+- **Mode**: **System**
+- **OS SKU**: **Azure Linux**
+- **Availability Zones**: **None**
+- **Node Size**: **Standard B2pls v2** (2 vCPUs, 4 GiB memory)
+- **Scale Method**: **Manual** or **Autoscale**
+- **Node Count**: **1**
+- **Max Pods per Node**: **30**
 
-- **Node Pool Name**: `demosysnode`
-- **Mode**: Select **System** to designate this as the main node pool handling essential cluster operations.
-- **OS SKU**: Choose **Azure Linux** (Linux is required for system node pools).
-- **Availability Zones**: Select **None**.
-- **Enable Azure Spot Instances**: Leave **Disabled**.
-- **Node Size**: Set to **Standard B2pls v2** (2 vCPUs, 4 GiB memory).
-- **Scale Method**: Choose **Manual** or **Autoscale** (recommended for automatic scaling).
-- **Node Count**: Set to **1 node**.
-- **Max Pods per Node**: Set to **30** (can be adjusted between 30 - 250).
-- **Enable Public IP per Node**: Leave **Disabled**.
-
-#### 3. Add a New Node Pool (User Node)
-Now, configure the User Node pool for application workloads:
-
-- **Node Pool Name**: `demousermode`
-- **Mode**: Select **User**.
-- **OS SKU**: Choose **Azure Linux**.
-- **Availability Zones**: Select **Zone 1** for optimized latency.
-- **Enable Azure Spot Instances**: Leave **Disabled**.
-- **Node Size**: Set to **Standard D2pds v5** (2 vCPUs, 8 GiB memory).
-- **Scale Method**: Choose **Autoscale**.
-- **Node Count**: Set the initial count to **3 nodes**.
-
-### Optional Settings:
-- **Max Pods per Node**: Set to **30**.
-- **Enable Public IP per Node**: Leave **Disabled** (recommended unless external access is needed).
+#### User Node Pool Setup
+- **Name**: `demousermode`
+- **Mode**: **User**
+- **OS SKU**: **Azure Linux**
+- **Availability Zones**: **Zone 1**
+- **Node Size**: **Standard D2pds v5** (2 vCPUs, 8 GiB memory)
+- **Scale Method**: **Autoscale**
+- **Node Count**: Initial **3 nodes**
 
 ---
 
-## Step 4: Configuring the User Node Pool in Kubernetes Cluster
-With the system node pool configured, add a user node pool to manage application workloads.
+## 6. Configuring Networking for the Kubernetes Cluster 🌐
 
-User Node Pool Configuration:
-
-- **Node Pool Name**: Set as `demousermode`.
-- **Mode**: Select **User** for handling application workloads.
-- **OS SKU**: Choose **Azure Linux**.
-- **Availability Zones**: Select **Zone 1**.
-- **Node Size**: Set to **Standard D2pds v5** (2 vCPUs, 8 GiB memory).
-- **Scale Method**: Choose **Autoscale**.
-- **Node Count**: Set the initial count to **3 nodes**.
+- **Public Access**: Use **Authorized IP Ranges** for restricted access.
+- **Container Networking**: **kubenet**
+- **VNet**: **Disabled** (default)
+- **DNS Name Prefix**: `demoKubernetesCluster-dns`
+- **Network Policy**: None
+- **Load Balancer**: **Standard**
 
 ---
 
-## Step 5: Configuring Networking for the Kubernetes Cluster
+## Finalizing Cluster Configuration ✅
 
-### Networking Configuration
-- **Public Access**: Set **Authorized IP Ranges** to control which IPs can access the cluster. By default, all IP ranges are blocked for enhanced security.
-- **Container Networking**: Use **kubenet**, which is lightweight and effective for small clusters.
-- **Bring Your Own Azure Virtual Network (VNet)**: Disabled by default.
-- **DNS Name Prefix**: Set as `demoKubernetesCluster-dns`.
-- **Network Policy**: None (default).
-- **Load Balancer**: Choose **Standard** for higher scalability and security options.
+1. **Set Other Options to Default**: For simplicity in this demo, keep default values.
+2. **Review and Create**: Click **Review + Create**.
+   - Azure will validate your configuration; correct any errors if needed.
+3. **Deploy**: Once validated, click **Create** to provision the cluster.
 
----
+⏳ Deployment may take a few minutes. Once complete, you will see a confirmation.
 
-## Finalizing Cluster Configuration
-
-### 1. Set Other Options to Default
-For this demo setup, leave all remaining configuration settings at their default values to avoid unnecessary complexity.
-
-### 2. Review and Create
-- Once all fields are configured, click **Review + Create** at the bottom of the page.
-- **Azure Validation**: Azure will validate your configuration. If any errors occur, they will be displayed for correction.
-- **Create the Cluster**: If validation passes, click **Create** to deploy the cluster.
-
-### 3. Deployment Confirmation
-Once you click **Create**, Azure will start provisioning your Kubernetes cluster. This process may take several minutes. Upon completion, a notification will confirm the successful creation of your Kubernetes cluster (`demoKubernetesCluster`).
-
-Your Azure Kubernetes Service (AKS) cluster is now up and running, configured with secure networking, basic node pools, and an accessible DNS prefix.
+Your Kubernetes cluster `demoKubernetesCluster` is now live, with networking security, node pools, and DNS prefix configured for immediate use in containerized applications on Azure!
 
 ---
 
-This setup serves as the foundation for deploying containerized applications securely and efficiently within Azure’s Kubernetes infrastructure. Let me know if you’d like further customization or details on deploying your applications!
+Let me know if you need any further customization or details on deploying applications to this cluster!
