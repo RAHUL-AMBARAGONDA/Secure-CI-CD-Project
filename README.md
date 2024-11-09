@@ -108,8 +108,8 @@ Ensure the following prerequisites are met:
 
 ### **Module 6: Implement End-to-End DevSecOps Pipeline for Mario Game**
 - [Step 1: Understanding the Pipeline](module_6/step-1-understanding-end-to-end-devsecops-pipeline-for-mario-game.md)
-- [Step 2: Hands-On: Part 1](module_6/step-2-hands-on-part-1---implement-end-to-end-devsecops-pipeline-for-mario-game.md)
-- [Step 3: Hands-On: Part 2](module_6/step-3-hands-on-part-2---implement-end-to-end-devsecops-pipeline-for-mario-game.md)
+- [Step 2: Hands-On: Part 1](module_6/step-2-hands-on-part-1-implement-end-to-end-devsecops-pipeline-for-mario-game.md)
+- [Step 3: Hands-On: Part 2](module_6/step-3-hands-on-part-2-implement-end-to-end-devsecops-pipeline-for-mario-game.md)
 
 ---
 
