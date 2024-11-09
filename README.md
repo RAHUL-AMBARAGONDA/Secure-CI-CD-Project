@@ -6,19 +6,20 @@
 
 ## 📚 Table of Contents
 
-1. [Introduction](#introduction)
-2. [Prerequisites](#prerequisites)
-3. [Project Overview](#project-overview)
-4. [Pipeline Architecture](#pipeline-architecture)
-5. [Step-by-Step Implementation](#step-by-step-implementation)
-6. [Clone the Repository](#clone-the-repository)
-7. [Set Up GitHub Actions](#set-up-github-actions)
-8. [Configure SonarQube for SAST](#configure-sonarqube-for-sast)
-9. [Dockerize the Mario Game](#dockerize-the-mario-game)
-10. [Implement Dynamic Tagging](#implement-dynamic-tagging)
-11. [Deploy to AKS with ArgoCD](#deploy-to-aks-with-argocd)
-12. [Validate End-to-End Pipeline Execution](#validate-end-to-end-pipeline-execution)
-13. [Conclusion](#conclusion)
+Table of Contents
+Introduction
+Prerequisites
+Project Overview
+Pipeline Architecture
+Step-by-Step Implementation
+Clone the Repository
+Set Up GitHub Actions
+Configure SonarQube for SAST
+Dockerize the Mario Game
+Implement Dynamic Tagging
+Deploy to AKS with ArgoCD
+Validate End-to-End Pipeline Execution
+Conclusion
 
 ---
 
