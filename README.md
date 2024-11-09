@@ -1,6 +1,4 @@
-Here's a professional and structured version of your **End-to-End DevSecOps Pipeline for Super Mario Game** documentation, complete with icons for a polished look:
 
----
 
 # 🚀 Let's Build End-to-End DevSecOps Pipeline for Super Mario Game
 
