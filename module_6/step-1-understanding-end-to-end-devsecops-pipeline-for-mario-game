@@ -1,94 +1,103 @@
+Certainly! Here's an updated `README.md` file that seamlessly continues from your previous labs, with each step following the pipeline process for deploying and securing the Mario Game:
 
-
+```markdown
 # Mario Game DevSecOps Pipeline with GitOps
 
 Welcome to the **Mario Game DevSecOps Pipeline** project! This project demonstrates an end-to-end DevSecOps pipeline using GitOps practices to secure, build, and deploy a containerized Mario Game application to Azure Kubernetes Service (AKS). Each stage is automated using GitHub Actions and ArgoCD, implementing security checks, containerization, and deployment.
 
 ---
 
-## 📋 Table of Contents
-- [Goal](#goal)
-- [Pipeline Overview](#pipeline-overview)
-- [Prerequisites](#prerequisites)
-- [Steps](#steps)
-  - [Step 1: Code Changes and Commit to GitHub](#step-1-code-changes-and-commit-to-github)
-  - [Step 2: GitHub Actions Workflow Execution](#step-2-github-actions-workflow-execution)
-  - [Step 3: Static Application Security Testing (SAST) with SonarQube](#step-3-static-application-security-testing-sast-with-sonarqube)
-  - [Step 4: Building the Docker Image](#step-4-building-the-docker-image)
-  - [Step 5: Pushing Docker Image to DockerHub](#step-5-pushing-docker-image-to-dockerhub)
-  - [Step 6: Updating Kubernetes Deployment with New Image Tag](#step-6-updating-kubernetes-deployment-with-new-image-tag)
-  - [Step 7: ArgoCD Auto-Detection and Deployment](#step-7-argocd-auto-detection-and-deployment)
-- [Final Verification](#final-verification)
-- [Project Summary](#project-summary)
+## 🎯 Goal of This Lab Series
+
+To implement a **DevSecOps pipeline** for deploying the **Mario Game** to **Azure Kubernetes Service (AKS)** using **GitOps practices**. We will integrate security tests, continuous integration, and deployment workflows, and leverage ArgoCD for continuous delivery.
 
 ---
 
-## 🎯 Goal
-To implement a DevSecOps pipeline that ensures secure, seamless deployment of the Mario Game application on AKS using GitOps and CI/CD best practices. 
+## 🧑‍💻 Labs Overview
+
+This lab series continues from previous lessons, where we covered the fundamentals of GitOps, ArgoCD, Docker, and CI/CD pipelines. The labs in this section focus on:
+
+1. Making code changes to update Mario Game controls.
+2. Implementing a full DevSecOps pipeline with **GitHub Actions**.
+3. Integrating **SonarQube** for Static Application Security Testing (SAST).
+4. Building a Docker image and pushing it to DockerHub.
+5. Automatically updating Kubernetes deployments using GitOps.
+6. Verifying deployment through ArgoCD.
+
+---
 
 ## 🚀 Pipeline Overview
-- **Version Control**: GitHub
-- **Continuous Integration/Delivery**: GitHub Actions
-- **Security Testing**: SonarQube for SAST
-- **Container Registry**: DockerHub
-- **Continuous Deployment**: ArgoCD on AKS
 
-## 🔧 Prerequisites
-1. **GitHub Repository** with `e2e-workflow.yaml` workflow file.
-2. **SonarQube** instance for SAST.
-3. **DockerHub** account for storing Docker images.
-4. **ArgoCD** configured with access to the AKS cluster.
-5. **AKS Cluster** for deploying the application.
+This pipeline automates the following tasks:
+- **Version Control**: GitHub repository for source code and configuration.
+- **CI/CD Pipeline**: GitHub Actions for build, test, and deployment automation.
+- **Security Testing**: SonarQube integration for Static Application Security Testing (SAST).
+- **Containerization**: Docker image creation and publishing to DockerHub.
+- **Continuous Deployment**: ArgoCD detects updates in the GitHub repository and deploys to AKS.
 
 ---
 
 ## 📐 Steps
 
 ### Step 1: Code Changes and Commit to GitHub
-1. **Objective**: Modify Mario Game code to change controls (e.g., update to "S" key).
-2. **Action**: Commit the modified code and push to the GitHub repository with the `e2e-workflow.yaml` file.
-3. **Outcome**: GitHub Actions workflow is triggered upon commit.
+1. **Objective**: Modify the Mario Game code to change the controls (e.g., update to the "S" key to start the game).
+2. **Action**: Commit and push the modified code to your GitHub repository.
+3. **Outcome**: GitHub Actions will be triggered automatically to run the pipeline.
 
 ### Step 2: GitHub Actions Workflow Execution
-1. **Objective**: Automate the CI/CD pipeline.
-2. **Action**: GitHub Actions automatically starts the workflow defined in `e2e-workflow.yaml`.
-3. **Outcome**: Initiates SAST, build, and deployment steps.
+1. **Objective**: Automate the CI/CD pipeline using GitHub Actions.
+2. **Action**: GitHub Actions will run the workflow as soon as the code is committed. The workflow is defined in the `e2e-workflow.yaml` file located in the root of the GitHub repo.
+3. **Outcome**: This step will trigger SAST scanning, Docker image building, and deployment tasks.
 
 ### Step 3: Static Application Security Testing (SAST) with SonarQube
-1. **Objective**: Perform security analysis of the code.
-2. **Action**: SonarQube runs SAST checks via GitHub Actions.
-3. **Outcome**: Detect and resolve any code vulnerabilities.
+1. **Objective**: Perform static application security testing (SAST) on the modified Mario Game code.
+2. **Action**: SonarQube will analyze the code for vulnerabilities, ensuring the code is secure before building and deployment.
+3. **Outcome**: SonarQube will report any issues with the code, such as security flaws, which need to be fixed before proceeding.
 
 ### Step 4: Building the Docker Image
-1. **Objective**: Build a Docker image for the Mario Game with a unique tag.
-2. **Action**: The workflow builds a Docker image using the updated code, tagging it dynamically (e.g., with timestamp or commit hash).
-3. **Outcome**: The newly tagged image is prepared for deployment.
+1. **Objective**: Build a Docker image for the Mario Game application.
+2. **Action**: GitHub Actions will trigger a Docker build using the updated code and dynamically tag the image (e.g., using the commit hash or timestamp).
+3. **Outcome**: A new Docker image tagged with a unique version will be created.
 
 ### Step 5: Pushing Docker Image to DockerHub
-1. **Objective**: Publish the image to DockerHub for easy deployment.
-2. **Action**: GitHub Actions pushes the image with its tag to DockerHub.
-3. **Outcome**: The DockerHub repository contains the latest Mario Game image.
+1. **Objective**: Push the newly built Docker image to DockerHub for easy access during deployment.
+2. **Action**: The GitHub Actions workflow will push the image to DockerHub under the specified repository.
+3. **Outcome**: The image will be available in DockerHub for use in the Kubernetes deployment.
 
 ### Step 6: Updating Kubernetes Deployment with New Image Tag
-1. **Objective**: Update the Kubernetes `deployment.yaml` file with the new Docker tag.
-2. **Action**: Workflow updates the `deployment.yaml` file in GitHub, referencing the latest image tag.
-3. **Outcome**: ArgoCD monitors the change and prepares to sync.
+1. **Objective**: Update the Kubernetes `deployment.yaml` file to reference the newly tagged Docker image.
+2. **Action**: The GitHub Actions workflow will automatically modify the `deployment.yaml` file to update the image tag.
+3. **Outcome**: The updated `deployment.yaml` file will be pushed to the GitHub repository.
 
 ### Step 7: ArgoCD Auto-Detection and Deployment
-1. **Objective**: ArgoCD detects and deploys the new image to AKS.
-2. **Action**: After a 3-minute interval, ArgoCD syncs with the `deployment.yaml` file to deploy the updated image.
-3. **Outcome**: The Mario Game application on AKS is updated with the latest code changes.
+1. **Objective**: ArgoCD will detect the change in the `deployment.yaml` file and sync the updated configuration with AKS.
+2. **Action**: ArgoCD, which is continuously monitoring the repository, will detect the new image tag and automatically trigger the deployment in the Azure Kubernetes cluster.
+3. **Outcome**: After a 3-minute interval, ArgoCD will deploy the updated Mario Game Docker image to AKS.
 
 ---
 
-## ✅ Final Verification
-1. **LoadBalancer IP**: Retrieve the LoadBalancer IP from the ArgoCD UI.
-2. **Access the Game**: Open your browser and enter `<LoadBalancer-IP>:8600`.
-3. **Play Mario**: Verify the controls by pressing "S" to start the game.
+## 🖥️ Final Verification
+
+1. **Retrieve LoadBalancer IP**: Go to the ArgoCD UI and find the **LoadBalancer IP** under the **Services** tab for the `supermariogame-service`.
+2. **Access the Game**: Open your browser and navigate to `<LoadBalancer-IP>:8600`.
+3. **Play Mario**: Press the "S" key to start the game and verify that the control change works.
 
 ---
 
 ## 📄 Project Summary
-This project demonstrates a robust DevSecOps pipeline utilizing GitOps principles. Each step automates security scanning, image building, and deployment, ensuring the Mario Game application is securely maintained and up-to-date on AKS.
+
+This lab demonstrates an end-to-end **DevSecOps pipeline** that leverages GitOps practices for continuous integration, security, containerization, and deployment. By integrating **GitHub Actions**, **SonarQube** for security, **Docker**, **DockerHub**, **Kubernetes**, and **ArgoCD**, this pipeline provides a secure, automated solution for deploying a containerized Mario Game to AKS.
 
 ---
+
+## 🚀 Future Enhancements
+
+- Implement **CI/CD promotion stages** for different environments (e.g., Dev, QA, Prod).
+- Add more **security scanning tools** (e.g., Docker security scans, dependency checks).
+- Integrate **automated testing** for functional and security checks before deployment.
+
+---
+
+```
+
+This README format provides a structured, detailed, and professional outline of the entire DevSecOps pipeline process, continuing from the previous labs, with a focus on each step and integration point. It ensures clarity for anyone working through the labs or referencing the pipeline setup.
