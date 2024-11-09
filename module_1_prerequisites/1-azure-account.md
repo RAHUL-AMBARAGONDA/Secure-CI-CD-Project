@@ -10,6 +10,9 @@ To set up a free Azure cloud account for hosting resources required for your Dev
 ### 1. Navigate to the Azure Free Account Page
 - Open your web browser and go to the [Azure Free Account](https://azure.microsoft.com/en-us/free) page.
 
+  ![Screenshot (91)](https://github.com/user-attachments/assets/aabfa8ed-69b9-4b9c-ae63-c27df48e24af)
+
+
 ### 2. Start Free Trial
 - Click on the **Start Free** button to begin the process. This will redirect you to the signup page.
 
