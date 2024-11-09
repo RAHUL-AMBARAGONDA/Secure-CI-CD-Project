@@ -6,9 +6,7 @@
 
 ## 📚 Table of Contents
 
-
-
-1. [ Project Introduction](#ProjectIntroduction)
+1. [Project Introduction](#project-introduction)
 2. [Prerequisites](#prerequisites)
 3. [Project Overview](#project-overview)
 4. [Pipeline Architecture](#pipeline-architecture)
@@ -21,8 +19,6 @@
 11. [Deploy to AKS with ArgoCD](#deploy-to-aks-with-argocd)
 12. [Validate End-to-End Pipeline Execution](#validate-end-to-end-pipeline-execution)
 13. [Conclusion](#conclusion)
-
----
 
 ---
 
@@ -120,12 +116,6 @@ Ensure the following prerequisites are met:
 ## 🎯 Conclusion
 
 In this project, we successfully built a complete DevSecOps pipeline for deploying the Infinite Mario Game. By integrating security at every stage of the CI/CD pipeline, from SAST to container security scans and seamless deployment with AKS, we demonstrated how DevSecOps practices help build secure, scalable applications. This ensures a secure and automated software development lifecycle that allows for continuous improvements and rapid delivery without compromising security.
-
----
-
-This format uses icons and professional formatting to create a visually appealing, user-friendly document for building the DevSecOps pipeline for the Mario game.
-
-
 
 
 
