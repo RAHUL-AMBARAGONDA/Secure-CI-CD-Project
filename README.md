@@ -71,7 +71,7 @@ Ensure the following prerequisites are met:
 - **Code Commit:** Push code changes to GitHub.
 - **Build & Test:** Run unit tests and static code analysis using SonarQube.
 - **Containerization:** Build and push Docker images to Docker Hub.
-- **Security Scanning:** Scan images with Trivy.
+- **Security Scanning:** Scan images with Grivy.
 - **Deployment:** Deploy to AKS using ArgoCD.
 
 ---
