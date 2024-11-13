@@ -29,7 +29,7 @@ In this project, we establish a secure, automated DevSecOps pipeline to manage t
 
 ### 🛠️ This Project Aims to Deliver:
 - **Automated Code Quality and Security:** Integration with SonarQube for Static Application Security Testing (SAST) to detect potential security issues early.
-- **Container Security:** Use of Trivy and other tools to scan container images for vulnerabilities.
+- **Container Security:** Use of Grype and other tools to scan container images for vulnerabilities.
 - **Infrastructure-as-Code (IaC):** Efficient deployment within Azure Kubernetes Service (AKS).
 - **Continuous Deployment:** Leveraging GitHub Actions for automated CI/CD workflows, ensuring rapid and reliable releases.
 
@@ -71,7 +71,7 @@ Ensure the following prerequisites are met:
 - **Code Commit:** Push code changes to GitHub.
 - **Build & Test:** Run unit tests and static code analysis using SonarQube.
 - **Containerization:** Build and push Docker images to Docker Hub.
-- **Security Scanning:** Scan images with Grivy.
+- **Security Scanning:** Scan images with Grype.
 - **Deployment:** Deploy to AKS using ArgoCD.
 
 ---
