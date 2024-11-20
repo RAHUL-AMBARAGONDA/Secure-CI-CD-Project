@@ -80,7 +80,10 @@ Ensure the following secrets are configured in the repository for secure pipelin
 2. **Test the SuperMario Game:**  
    - Access the game via its URL.  
    - Clear your browser cache to load the latest code changes.  
-   - Play the game using the **updated controls**, ensuring the changes reflect in the deployed application.  
+   - Play the game using the **updated controls**, ensuring the changes reflect in the deployed application.
+
+     ![Screenshot (89)](https://github.com/user-attachments/assets/c2a49579-08e7-4b39-bb12-ad0328b0087f)
+
 
 ---
 
