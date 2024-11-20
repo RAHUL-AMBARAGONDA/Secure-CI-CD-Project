@@ -164,6 +164,4 @@ By completing this module, you have a fully automated, secure, and scalable DevS
 
 🚀 **Next Steps:** Continue enhancing the pipeline with dynamic security testing (DAST) and infrastructure as code (IaC) security scans.
 
---- 
 
-Let me know if you’d like me to make further tweaks! 😊
