@@ -76,6 +76,8 @@ Ensure the following secrets are configured in the repository for secure pipelin
      ```bash
      kubectl get pods -n <namespace>
      ```
+![Screenshot (88)](https://github.com/user-attachments/assets/856b6588-ed92-4f24-b397-b54e70473c75)
+
 
 2. **Test the SuperMario Game:**  
    - Access the game via its URL.  
