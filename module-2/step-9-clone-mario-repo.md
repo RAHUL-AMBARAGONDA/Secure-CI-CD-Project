@@ -2,7 +2,7 @@ Here's a detailed, step-by-step guide to clone the "Mario" GitHub repository, se
 
 ---
 
-### **Lab Title**: DevSecOps SonarQube SAST Scan with Super Mario Repo
+# **Lab Title**: DevSecOps SonarQube SAST Scan with Super Mario Repo
 
 **Description**: This lab will guide you through setting up a DevSecOps project locally by cloning the Super Mario SonarQube SAST scan repository from GitHub, verifying the setup, and preparing the environment for future DevSecOps work.
 
