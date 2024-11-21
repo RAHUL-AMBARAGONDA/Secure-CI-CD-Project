@@ -80,6 +80,8 @@ In the **Basics** tab:
 - **Scale Method**: **Autoscale**
 - **Node Count**: Initial **3 nodes**
 
+![Screenshot (96)](https://github.com/user-attachments/assets/4980320c-6c8d-46e4-95f6-4cbecd873a2e)
+
 ---
 
 ## 6. Configuring Networking for the Kubernetes Cluster 🌐
