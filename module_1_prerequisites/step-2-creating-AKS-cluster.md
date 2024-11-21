@@ -20,6 +20,9 @@ A step-by-step guide to creating a Kubernetes cluster in Azure, optimized for **
 - In the search bar, type **Kubernetes services** and select it.
 - Click on **+ Create** to initiate the Kubernetes cluster setup.
 
+  ![Screenshot (99)](https://github.com/user-attachments/assets/16710f9e-1934-4685-a688-181e64e0befa)
+
+
 ---
 
 ## 2. Configure Basic Cluster Settings ⚙️
