@@ -41,6 +41,8 @@ In the **Basics** tab:
 - **Kubernetes Version**: Choose **1.27.7** (or default version).
 - **Automatic Upgrade**: **Disabled** for manual control.
 
+  
+
 ---
 
 ## 4. Set Authentication and Authorization Options 🔒
