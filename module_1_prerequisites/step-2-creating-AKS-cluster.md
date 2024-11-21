@@ -33,6 +33,8 @@ In the **Basics** tab:
 - **Availability Zones**: Set to **None**.
 - **AKS Pricing Tier**: Choose **Free**.
 
+  ![Screenshot (92)](https://github.com/user-attachments/assets/dbe0b6c6-18f0-4a03-8ed1-4f5cf15709ec)
+
 ---
 
 ## 3. Configure Kubernetes Version and Upgrade Settings 🛠️
