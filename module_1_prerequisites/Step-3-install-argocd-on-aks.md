@@ -72,12 +72,12 @@ kubectl get svc -n argocd
    - If you see a "Not Secure" warning, proceed by selecting **Advanced** and clicking **Proceed** to open the UI.
 
    - ![R](https://github.com/user-attachments/assets/a55c850d-a05d-43aa-9b30-090db317255c)
-   - 
+     
    - below is the image of argo cd ui:
-   - 
+     
    - ![Screenshot (16)](https://github.com/user-attachments/assets/417f520f-e37b-44b3-a572-693f2a625ca5)
 
-   - 
+    
    
 **Step 8: Log into ArgoCD**
 
@@ -92,7 +92,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
   - `echo` prints the password to the terminal for easy copying.
  
   - ![Screenshot (17)](https://github.com/user-attachments/assets/6e37d212-b47d-4aa9-b27d-e02e85dadfb6)
-  - 
+   
 By this we successfully completed installing argocd on aks cluster
 
 
