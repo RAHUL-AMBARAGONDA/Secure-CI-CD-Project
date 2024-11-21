@@ -1,11 +1,12 @@
 
 ### Step-by-Step Lab Guide to Create a VM in Azure (with Default Settings)
 
-🌐 Step-by-Step Lab Guide to Create and Configure a VM in Azure
+# 🌐 Step-by-Step Lab Guide to Create and Configure a VM in Azure
 
-📋 Table of Contents
+# 📋 Table of Contents
 
-Create a Virtual Machine in Azure
+# Create a Virtual Machine in Azure
+
 Step 1: Sign in to Azure Portal
 
 Step 2: Create a Virtual Machine
