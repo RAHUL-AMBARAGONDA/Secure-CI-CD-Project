@@ -1,9 +1,9 @@
 
-### **Lab: Deploy Mario Game on Azure Kubernetes Service using ArgoCD - Part 2 (with Changes)**
+# **Lab: Deploy Mario Game on Azure Kubernetes Service using ArgoCD - Part 2 (with Changes)**
 
 ---
 
-### **Goal of this Lab:**
+# **Goal of this Lab:**
 - To deploy the Super Mario game Docker image to Azure Kubernetes Service (AKS) using **ArgoCD** and manage it using GitOps principles.
 - Once the game is deployed, we'll interact with the game through the browser, and demonstrate the changes we made to the game startup behavior (pressing 'Y' to start). In the next lab, we'll automate further changes via a DevSecOps pipeline.
 
