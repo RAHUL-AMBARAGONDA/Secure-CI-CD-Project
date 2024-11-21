@@ -1,8 +1,8 @@
 
 
-## **Lab: Container Scan for Super Mario Docker Image part 2**
+# **Lab: Container Scan for Super Mario Docker Image part 2**
 
-### **Goal:**
+# **Goal:**
 To pull the Super Mario Docker image from Docker Hub, run a container scan on the image using Grype, and allow the build to pass even if vulnerabilities are found.
 
 ---
