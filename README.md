@@ -59,7 +59,7 @@ Ensure the following prerequisites are met:
 - **Docker and Docker Hub**
 - **SonarQube for SAST Scans**
 - **GitHub Actions for CI/CD**
-- **Trivy for Container Security**
+- **Grype for Container Security**
 
 ---
 
