@@ -23,7 +23,7 @@ Here's a detailed, step-by-step guide to clone the "Mario" GitHub repository, se
    
    This command creates the `Dev-Sec` folder on your `C:` drive and navigates into it.
 
-3. **Fork the Repository (if necessary)**  
+3. **Fork the Repository**  
    - Go to the GitHub repository page: `https://github.com/asecurityguru/gitops-practice-devsecops-sonarqube-sast-scan-supermario-repo`
    - Click the **Fork** button on the top-right to create a copy of the repository in your GitHub account.
 
