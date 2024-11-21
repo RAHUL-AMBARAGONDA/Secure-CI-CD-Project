@@ -41,7 +41,8 @@ In the **Basics** tab:
 - **Kubernetes Version**: Choose **1.27.7** (or default version).
 - **Automatic Upgrade**: **Disabled** for manual control.
 
-  
+  ![Screenshot (93)](https://github.com/user-attachments/assets/68db415b-cd42-467d-8f28-7f9310097220)
+
 
 ---
 
