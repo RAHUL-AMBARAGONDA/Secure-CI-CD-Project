@@ -1,6 +1,25 @@
 
 ### Step-by-Step Lab Guide to Create a VM in Azure (with Default Settings)
 
+🌐 Step-by-Step Lab Guide to Create and Configure a VM in Azure
+📋 Table of Contents
+Create a Virtual Machine in Azure
+Step 1: Sign in to Azure Portal
+Step 2: Create a Virtual Machine
+Step 3: Configure Project Details
+Step 4: Configure Image and Size
+Step 5: Configure Administrator Account
+Step 6: Configure Inbound Port Rules
+Step 7: Review and Create
+Step 8: Access Your Virtual Machine
+Configure Inbound Port Rules
+Set Up SonarQube on Azure VM
+System Requirements
+Configuration Steps
+Docker Compose Setup
+Access SonarQube
+Summary of Commands
+
 #### Step 1: Sign in to the Azure Portal
 1. Open your web browser and go to the [Azure Portal](https://portal.azure.com).
 2. Sign in with your Azure account credentials.
