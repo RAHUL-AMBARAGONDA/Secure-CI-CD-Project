@@ -1,6 +1,6 @@
 Here's how to implement Part 1 of the container scan for the Super Mario Docker image, similar to the previous steps where we used Visual Studio Code to create and push the workflow to GitHub.
 
-### Goal of this Lab:
+# Goal of this Lab:
 To pull the Super Mario Docker image from Docker Hub, run a container scan on the Docker image, and pass/fail the build based on the vulnerabilities' severity.
 
 ---
