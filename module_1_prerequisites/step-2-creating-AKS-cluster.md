@@ -67,7 +67,8 @@ In the **Basics** tab:
 - **Node Count**: **1**
 - **Max Pods per Node**: **30**
 
-  ![Screenshot (95)](https://github.com/user-attachments/assets/b38cd331-1a8b-434c-b68e-6f477f45ad78)
+  ![Screenshot (95)](https://github.com/user-attachments/assets/d7b8c5bd-7508-4f29-a234-257bb1d493e9)
+
 
 
 #### User Node Pool Setup
