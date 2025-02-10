@@ -1,4 +1,4 @@
-# 🌐 Creating an Azure Cloud Account 
+# 🌐 Creating an Azure Cloud Account  
 
 ## 🎯 Objective:  
 To set up a free Azure cloud account for hosting resources required for your DevSecOps pipeline.
