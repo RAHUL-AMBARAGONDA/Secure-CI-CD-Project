@@ -61,6 +61,8 @@ Ensure the following prerequisites are met:
 - **GitHub Actions for CI/CD**
 - **Grype for Container Security**
 - Components of a DevSecOps Pipeline
+
+  
 Argo CD
 Docker
 Grype
