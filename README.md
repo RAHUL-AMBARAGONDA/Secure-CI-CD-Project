@@ -61,8 +61,9 @@ Ensure the following prerequisites are met:
 - **GitHub Actions for CI/CD**
 - **Grype for Container Security**
 - Components of a DevSecOps Pipeline
+  
 
-  SonarQube![image](https://github.com/user-attachments/assets/ac583368-28ea-457f-85a4-b809f9a80947)
+  ![image](https://github.com/user-attachments/assets/ac583368-28ea-457f-85a4-b809f9a80947)
 
 
 ---
