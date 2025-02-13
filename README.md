@@ -62,13 +62,7 @@ Ensure the following prerequisites are met:
 - **Grype for Container Security**
 - Components of a DevSecOps Pipeline
 
-  
-Argo CD
-Docker
-Grype
-Docker Hub
-GitHub Actions
-SonarQube![image](https://github.com/user-attachments/assets/ac583368-28ea-457f-85a4-b809f9a80947)
+  SonarQube![image](https://github.com/user-attachments/assets/ac583368-28ea-457f-85a4-b809f9a80947)
 
 
 ---
