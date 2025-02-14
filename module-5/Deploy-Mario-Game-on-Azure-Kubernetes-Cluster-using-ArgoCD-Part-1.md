@@ -7,7 +7,7 @@
 #### **Step 1: Create an Application in ArgoCD** 
 
 1. **Log in to ArgoCD:**
-   Access your ArgoCD UI by navigating to the URL. 
+   Access your ArgoCD UI by navigating to the URL.  
 
    Example:
    ```bash
