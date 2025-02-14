@@ -8,7 +8,7 @@
 
 1. **Log in to ArgoCD:**
    Access your ArgoCD UI by navigating to the URL.   
- 
+  
    Example:
    ```bash
    kubectl port-forward svc/argocd-server -n argocd 8080:80
