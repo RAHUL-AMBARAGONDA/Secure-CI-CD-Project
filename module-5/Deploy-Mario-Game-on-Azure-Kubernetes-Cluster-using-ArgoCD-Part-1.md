@@ -1,6 +1,6 @@
 
 
-### **Goal**: Deploy the Super Mario Docker image to Azure Kubernetes Service (AKS) using ArgoCD. 
+### **Goal**: Deploy the Super Mario Docker image to Azure Kubernetes Service (AKS) using ArgoCD.  
 
 ### **Steps Involved**:
 
