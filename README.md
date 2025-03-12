@@ -1,7 +1,7 @@
 
 
 # 🚀 Let's Build End-to-End DevSecOps Pipeline for Super Mario Game  
- 
+  
 ![WhatsApp Image 2024-10-26 at 9 43 54 PM](https://github.com/user-attachments/assets/546890df-a20c-4676-82cd-2e0f425914fc)
 
 ## 📚 Table of Contents  
